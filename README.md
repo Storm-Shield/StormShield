@@ -66,5 +66,5 @@ Acesse o protótipo interativo do site aqui:
 
 ## 📄 Licença
 
-Este projeto é de uso acadêmico e está sob a licença MIT.
+Este projeto é de uso acadêmico e está sob a licença da FIAP.
 
