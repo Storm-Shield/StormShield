@@ -1,9 +1,155 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-*{
+/*set*/
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
 
+/* variables */
+
+:root {
+    --color-white: #FFFFFF;
+    --color-background-dark: #00000;
+    --gradient: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .45));
+    --transition: .5s;
+    --spacing-md: 1.5rem;
+    /* 24px */
+    --spacing-sm: 1rem;
+    /* 16px */
+    --spacing-md: 1.5rem;
+    /* 24px */
+    --spacing-lg: 2rem;
+    /* 32px */
+    --transition-speed: 0.3s;
+}
+
+/* configurações gerais */
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* configurações gerais fim */
+/* cabeçalho */
+
+/* icones*/
+header {
+    background-image: url(../assets/Earth.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100dvh;
+    color: var(--color-white);
+}
+
+.hero {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0 var(--spacing-lg);
+}
+
+
+#logo {
+    width: 10rem;
+    height: 8rem;
+    flex-shrink: 0;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.hero-icons {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+/* icones fim */
+/* menu */
+.daltonic-switcher,
+.theme-switcher {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+}
+
+.theme-switcher {
+    border-radius: 50%;
+    border: 2px solid var(--color-white);
+    background-color: var(--color-background-dark);
+}
+
+.button-menu-mobile {
+    display: none;
+}
+
+.menu {
+    margin-left: auto;
+}
+
+.menu-items {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.menu-items li>a {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* menu fim*/
+/* destaque */
+.destaque {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2% 30%;
+   
+}
+
+.destaque h1 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.destaque p{ 
+    text-align: center;
+   font-size: 1.2rem;
+}
+
+/* destaque fim */
+
+/* cabeçalho fim*/
