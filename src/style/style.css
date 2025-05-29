@@ -370,6 +370,114 @@ header {
 
 /* card-destaque fim */
 
+/* FOOTER */
+
+.footer {
+    background-color: #0A192F; /* Cor de fundo principal do footer (azul escuro) */
+    color: #E0E0E0; /* Cor do texto principal (cinza claro/branco) */
+    padding: 50px 300px; /* Espaçamento interno */
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores */
+    gap: 150px; /* Espaço entre as colunas */
+    margin-bottom: 30px;
+}
+
+
+.footer-contact,
+.footer-solutions {
+    flex: 1; /* Permite que as seções cresçam */
+    min-width: 220px; /* Largura mínima para evitar que fiquem muito espremidas */
+
+}
+
+
+.footer-logo {
+    width: 300px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-top: -70px;
+
+}
+
+
+.footer h3 {
+    font-size: 20px; 
+    color: #FFFFFF; /* Cor dos títulos das seções */
+    margin-top: 0; /* Remove margem superior padrão do h3 */
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+
+.footer-contact p {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px; /* espaço entre ícone e texto */
+  margin: 10px 0;
+}
+
+.footer-contact p i {
+  width: 20px;         /* largura fixa pros ícones */
+  text-align: center;  /* centraliza os ícones */
+  margin-top: 4px;     /* ajusta verticalmente se precisar */
+  color:#0DF7FF;
+}
+
+.footer-contact a,
+.footer-solutions a {
+    color: #E0E0E0;
+    text-decoration: none;
+}
+
+.footer-contact a:hover,
+.footer-solutions a:hover {
+    color: #00AEEF; /* Cor ao passar o mouse nos links */
+}
+
+.footer-divider {
+    border-top: 1px solid #3A4D6D; /* Cor da linha divisória (cinza azulado) */
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px; /* Espaço entre o copyright e o botão em telas menores */
+}
+
+.footer-copyright {
+    font-size: 15px;
+    color: #FFFFFF; /* Cor do texto de copyright (cinza azulado claro) */
+    margin: 0; /* Remove margem padrão do parágrafo */
+    text-decoration: underline;
+}
+
+.footer-button {
+    background-color: #006D8B; /* Cor de fundo do botão (azul petróleo mais escuro) */
+    color: #FFFFFF;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-button:hover {
+    background-color: #008AB8; /* Cor do botão ao passar o mouse */
+}
+
+
 
 
 /* responsividade */
