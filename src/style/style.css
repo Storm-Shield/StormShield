@@ -19,6 +19,7 @@
     --color-background-red: #F3DADA;
     --color-background-blue-one: #C2F6F4;
     --color-background-blue-two: #06ACE9;
+    --color-background-blue-three: #4788FF;
     --gradient: rgba(0, 0, 0, .3);
     --transition: .5s;
     --spacing-sm: 1rem;
@@ -43,6 +44,7 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    background-color: var(--color-background-one);
 }
 
 a {
@@ -109,8 +111,8 @@ header {
 }
 
 #logo {
-    width: 10rem;
-    height: 8rem;
+    width: 6rem;
+    height: 6rem;
     flex-shrink: 0;
 }
 
@@ -133,8 +135,8 @@ header {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    width: var(--spacing-mlg);
-    height: var(--spacing-mlg);
+    width: var(--spacing-lg);
+    height: var(--spacing-lg);
 }
 
 .theme-switcher {
@@ -158,7 +160,7 @@ header {
 
 .menu-items li>a {
     font-weight: bold;
-    font-size: var(--spacing-md);
+    font-size: var(--spacing-sm);
 }
 
 /* menu fim*/
@@ -167,18 +169,19 @@ header {
 /* configurações gerais main */
 .cabecalho-conteudo {
     text-align: center;
+     margin-top: 50px
 }
 
 .cabecalho-conteudo>h2 {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 5rem;
+    font-size: 4rem;
     margin-top: 50px
 }
 
 .cabecalho-conteudo>p {
     margin-top: 50px;
-    font-size: 2.5rem;
+    font-size: var(--spacing-lg);
 }
 
 .conteudo {
@@ -214,25 +217,20 @@ header {
     font-size: var(--spacing-md);
 }
 
-#problemas,
-#objetivos,
-#beneficios {
-    background-color: var(--color-background-one);
+#tecnologias,
+#publico-alvo {
+    background-color: var(--color-white);
 }
 
 /* configurações gerais main */
 
 /* problemas */
 
-
 .destaque-problemas {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* Creates two columns of equal width */
     gap: 20px;
-    /* Adds space between grid cells */
     align-items: flex-start;
-    /* Aligns items to the top of their grid areas */
 }
 
 .destaque-problemas {
@@ -273,48 +271,52 @@ header {
 /* tecnologias */
 .tecnologia {
     background-color: var(--color-background-blue-one);
-    padding: 15px;
+    padding: 10px; 
 }
 
 .destaque-tecnologia {
-    padding: 5% 3%;
+    padding: 3% 2%; 
     text-align: center;
     background-color: var(--color-background-blue-two);
-    border-radius: 60px;
+    border-radius: 40px;
+    max-width: 75%; 
+    margin: 0 auto; 
 }
 
-.destaque-tecnologia>h3 {
-    font-size: 4rem;
+.destaque-tecnologia > h3 {
+    font-size: 2.5rem;
     color: var(--color-white);
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.destaque-tecnologia>p {
-    font-size: 2.5rem;
+.destaque-tecnologia > p {
+    font-size: 1.5rem; 
     font-weight: bold;
 }
 
 .indices {
+    margin-top: 10px ;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around; 
     text-align: center;
+    padding: 10px 0;
 }
 
-.indices>div {
+.indices > div {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 3rem;
+    font-size: 1.8rem; 
+    margin: 0 10px; 
 }
 
-.indices>div>span {
+.indices > div > span {
     font-weight: bold;
     color: var(--color-ice);
 }
 
-.indices>div>p {
-
+.indices > div > p {
     font-weight: bold;
     color: var(--color-white);
 }
@@ -324,16 +326,53 @@ header {
 
 /* objetivos fim */
 
+/* card-destaque */
+.box-destaque {
+    border-radius: 30px;
+    display: flex;
+    gap: 20px;
+    background-color: var(--color-white);
+    margin: 0 auto; 
+    max-width: 75%;
+}
+
+.card-destaque-conteudo h3 {
+    margin-top: 30px;
+    font-size: var(--spacing-mlg); 
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.card-destaque-conteudo >  p {
+    font-size: var(--spacing-lg); 
+    margin-bottom: 21%;
+}
+
+.card-destaque-conteudo img {
+    width: 45%; 
+    left: 0;
+    height: auto; 
+}
+
+.card-destaque-conteudo > .botao{
+    border-radius: 20px;
+    width: 50px;
+    padding: 5% 10%;
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--color-white);
+    background-color: var(--color-background-blue-three);
+}
+/* card-destaque fim */
+
+
 
 /* responsividade */
 @media (max-width: 950px) {
     .box {
         flex-direction: column;
-        /* Stacks items vertically */
         align-items: center;
-        /* Centers items when stacked */
         gap: 30px;
-        /* Adjust gap for vertical stacking */
     }
 
     .card {
