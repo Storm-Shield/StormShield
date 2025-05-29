@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/style/style.css">
-    <link rel="stylesheet" href="./src/style/loading.css">
     <title>StormShield</title>
 </head>
 
@@ -29,22 +28,28 @@
 
     <!-- Final Loading page -->
     <header>
+        <div>
+
+        </div>
         <div class="hero">
-            <div id="logo">
-                <img src="./src/assets/LogoStormShield.png" alt="logo da StormShield">
+            <figure id="logo">
+                <img src="./src/assets/LogoStormShield.png" alt="Logotipo da StormShield">
+            </figure>
+
+            <div class="hero-icons">
+                <button type="button" class="daltonic-switcher" aria-label="Alternar modo para daltonismo">
+                    <img src="./src/assets/DaltonismoChange.png" alt="Ícone de ajuste de cores para daltonismo">
+                </button>
+                <button type="button" class="theme-switcher" aria-label="Alternar tema claro/escuro">
+                </button>
             </div>
 
-            <div id="troca-cor">
-                <button type="button">
-                    <img src="./src/assets/DaltonismoChange.png" alt="Botão para daltonismo">
-                </button>
-                <button type="button"></button>
-            </div>
+
 
 
             <nav class="menu">
-                <ul>
-                    <li><a href="#problemas">Problemas</a></li>
+                <ul class="menu-items">
+                    <li><a href="#problemas">Problema</a></li>
                     <li><a href="#tecnologias">Tecnologias</a></li>
                     <li><a href="#objetivos">Objetivos</a></li>
                     <li><a href="#publico-alvo">Público - Alvo</a></li>
@@ -59,7 +64,8 @@
 
         <div class="destaque">
             <h1>Proteção inteligente para quem mais precisa</h1>
-            <p>Utilizamos sensores IoT, inteligência artifical e análise de dados em tempo real para prevenir e mitgar
+            <p>Utilizamos sensores IoT, inteligência artifical e análise de dados em tempo real para prevenir e
+                mitgar
                 os impactos das enchestes urbanas.</p>
         </div>
 
@@ -68,18 +74,16 @@
     <main>
         <section id="problemas">
             <div class="cabecalho-conteudo">
-                <figure>
-                    <img src="" alt="icone de alerta">
-                </figure>
+                <span class="mingcute--alert-line"></span>
                 <h2>O problema das enchenstes urbanas</h2>
-                <p>As enchenstes causam bilhões em prejuízos anualmente no Brasil, afetando milhões de pessoas e
-                    causando impactos sociais, econômicos e ambientais devastadores</p>
+                <p>As enchentes urbanas causam bilhões em prejuízos anualmente no Brasil, afetando milhões de pessoas e
+                    causando impactos sociais, econômicos e ambientais devastadores.</p>
             </div>
 
-            <div class="conteudo">
-                <figure>
+            <!-- <div class="destaque-problemas">
                     <img src="./src/assets/Praia.jpg" alt="foto de praia">
-                </figure>
+             
+
                 <aside class="alerta">
                     <h4>Estatisticas Alarmantes</h4>
                     <ul>
@@ -89,20 +93,21 @@
                         <li>200+ mortes por ano relacionadas a enchentes</li>
                     </ul>
                 </aside>
-
+            </div> -->
+            <div class="conteudo">
                 <div class="box">
-                    <div class="card-alerta">
-                        <figure><img src="" alt="icone casa"></figure>
+                    <div class="card ">
+                        <span class="teenyicons--house-outline"></span>
                         <h4>Residências Afetadas</h4>
                         <p>Milhares de famílias perdem seus lares e pertences anualmente</p>
                     </div>
-                    <div class="card-alerta">
-                        <figure><img src="" alt="icone moto"></figure>
+                    <div class="card ">
+                        <span class="streamline--transfer-motorcycle"></span>
                         <h4>Mobilidade Urbana</h4>
                         <p>Trânsito paralisado e transporte público interrompido</p>
                     </div>
-                    <div class="card-alerta">
-                        <figure><img src="" alt="icone arvore"></figure>
+                    <div class="card ">
+                        <span class="streamline--tree-3"></span>
                         <h4>Mobilidade Urbana</h4>
                         <p>Trânsito paralisado e transporte público interrompido</p>
                     </div>
@@ -120,44 +125,51 @@
 
             <div class="conteudo">
                 <div class="box">
-                    <div class="card-tecnologia">
-                        <figure><img src="" alt="icone sensor IOT"></figure>
+                    <div class="card tecnologia">
+                        <span class="streamline--ai-chip-spark"></span>
                         <h4>Sensores IoT</h4>
                         <p>Rede de sensores distribuídos pela cidade monitoram níveis de água, precipitação e vazão em
                             tempo real</p>
                     </div>
-                    <div class="card-tecnologia">
-                        <figure><img src="" alt="icone inteligência artifical"></figure>
-                        <h3>Inteligência Artificial</h3>
+                    <div class="card tecnologia">
+                        <span class="streamline--ai-network-spark-remix"></span>
+                        <h4>Inteligência Artificial</h4>
                         <p>Algoritmos de machine learning analisam padrões climáticos e preveem enchentes com até 6
                             horas de antecedência</p>
                     </div>
-                    <div class="card-tecnologia">
-                        <figure><img src="" alt="icone celular"></figure>
+                    <div class="card tecnologia">
+                        <span class="streamline--phone-ringing-2"></span>
                         <h4>Alertas Inteligentes</h4>
                         <p>Sistema de notificações push e SMS para população e autoridades com informações precisas e
                             acionáveis</p>
                     </div>
-                    <div class="card-tecnologia">
-                        <figure><img src="" alt="icone Big-Data"></figure>
+                    <div class="card tecnologia">
+                        <span class="streamline--ai-science-spark"></span>
                         <h4>Big Data Analytics</h4>
                         <p>Análise de dados históricos, meteorológicos e topográficos para otimizar estratégias de
                             prevenção</p>
                     </div>
                 </div>
 
-                <div class="box-destaque-tecnologia">
+                <div class="destaque-tecnologia">
                     <h3>Tecnologia que salva vidas</h3>
                     <p>Nossa plataforma integrada reduz em até 70% os danos causados por enchentes através da prevenção
                         inteligente.</p>
 
-                    <div class="destaque-tecnologia-conteudo">
-                        <span>70%</span>
-                        <p>Redução de danos</p>
-                        <span>6h</span>
-                        <p>Antecedência de alerta</p>
-                        <span>24/07</span>
-                        <p>monitoram</p>
+                    <div class="indices">
+                        <div>
+                            <span>70%</span>
+                            <p>Redução de danos</p>
+                        </div>
+                        <div>
+                            <span>6h</span>
+                            <p>Antecedência de alerta</p>
+                        </div>
+                        <div>
+                            <span>24/07</span>
+                            <p>Monitoramento</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -171,32 +183,31 @@
 
             <div class="conteudo"><!-- conteundo da section -->
                 <div class="box"><!-- box -->
-                    <div class="card-objetivos"><!-- card -->
+                    <div class="card objetivos"><!-- card -->
                         <figure><img src="" alt="número um"></figure>
-                        <p>Reduzir perdas humanas e materiais</p>
+                        <h4>Reduzir perdas humanas e materiais</h4>
                     </div><!-- card -->
-                    <div class="card-objetivos"><!-- card -->
+                    <div class="card objetivos"><!-- card -->
                         <figure><img src="" alt="número dois"></figure>
-                        <p>Oferecer alertas precisos com até 6h de antecedência</p>
+                        <h4>Oferecer alertas precisos com até 6h de antecedência</h4>
                     </div><!-- card -->
-                    <div class="card-objetivos"><!-- card -->
+                    <div class="card objetivos"><!-- card -->
                         <figure><img src="" alt="número três"></figure>
-                        <h4>Alertas Inteligentes</h4>
-                        <p>Democratizar o acesso à informação de risco</p>
+                        <h4>Democratizar o acesso à informação de risco</h4>
                     </div><!-- card -->
-                    <div class="card-objetivos"><!-- card -->
+                    <div class="card objetivos"><!-- card -->
                         <figure><img src="" alt="número quatro"></figure>
-                        <p>Ajudar cidades com déficit em infraestrutura</p>
+                        <h4>Ajudar cidades com déficit em infraestrutura</h4>
                     </div><!-- card -->
                 </div><!-- box -->
 
-                <div class="box-destaque-objetivos">
+                <div class="box-destaque">
 
-                    <figure>
+
                         <img src="./src/assets/PessoaNoComputador.jpg" alt="Duas pessoa fazendo quiz">
-                    </figure>
 
-                    <div class="destaque-objetivos-conteudo">
+
+                    <div class="card-destaque-conteudo">
                         <h3>Quiz</h3>
                         <p>Segue abaixo o link do quiz interativo com 10 perugntas. </p>
                         <a href="./src/pages/" class="botao">Acessar Quiz</a>
@@ -224,9 +235,9 @@
                 </div>
 
                 <div class="publico-alvo-item reverse-layout">
-                    <figure class="publico-alvo-imagem">
+                   
                         <img src="./src/assets/globo-dados.jpg" alt="Terra em argila.">
-                    </figure>
+        
                     <div class="publico-alvo-texto">
                         <h3>Defesa Civil e Órgãos Municipais</h3>
                         <p>“Menos de 30% dos municípios têm sistemas integrados de alerta e resposta. Com StormShield,
@@ -262,19 +273,19 @@
 
             <div class="conteudo"><!-- conteundo da section -->
                 <div class="box"><!-- box -->
-                    <div class="card-beneficios"><!-- card -->
+                    <div class="card beneficios"><!-- card -->
                         <figure><img src="" alt="icone telefone"></figure>
                         <p>Alerta em tempo real via app, sms e rádio</p>
                     </div><!-- card -->
-                    <div class="card-beneficios"><!-- card -->
+                    <div class="card beneficios"><!-- card -->
                         <figure><img src="" alt="icone de aumento"></figure>
                         <p>Alerta em tempo real via app, sms e rádio</p>
                     </div><!-- card -->
-                    <div class="card-beneficios"><!-- card -->
+                    <div class="card beneficios"><!-- card -->
                         <figure><img src="" alt="icone ingrenagem"></figure>
                         <p>Mais segurança para quem mais precisa</p>
                     </div><!-- card -->
-                    <div class="card-beneficios"><!-- card -->
+                    <div class="card beneficios"><!-- card -->
                         <figure><img src="" alt="icone de ganho"></figure>
                         <p>Sistema escalável e de baixo custo</p>
                     </div><!-- card -->
@@ -282,12 +293,12 @@
             </div><!-- conteundo da section -->
         </section>
 
-        <div class="box-destaque-objetivos">
-            <figure>
+        <div class="box-destaque">
+          
                 <img src="./src/assets/PessoaNoComputador.jpg" alt="Duas pessoa fazendo quiz">
-            </figure>
+    
 
-            <div class="destaque-objetivos-conteudo">
+            <div class="card-destaque-conteudo">
                 <h3>Protótipo</h3>
                 <p>Clique no botão abaixo para ter acesso ao protótipo do app.</p>
                 <a href="./src/pages/" class="botao">Acessar StormShield app </a>

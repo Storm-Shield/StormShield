@@ -1,9 +1,400 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-*{
+/*set*/
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
 
+/* variables */
+
+:root {
+    --color-white: #FFFFFF;
+    --color-red: #FF0000;
+    --color-ice: #7DF1F5;
+    --color-background-one: #F2F2F2;
+    --color-background-dark: #000000;
+    --color-background-red: #F3DADA;
+    --color-background-blue-one: #C2F6F4;
+    --color-background-blue-two: #06ACE9;
+    --color-background-blue-three: #4788FF;
+    --gradient: rgba(0, 0, 0, .3);
+    --transition: .5s;
+    --spacing-sm: 1rem;
+    /* 16px */
+    --spacing-md: 1.5rem;
+    /* 24px */
+    --spacing-lg: 2rem;
+    /* 32px */
+    --spacing-mlg: 3rem;
+
+    --sizing-icons: 5rem;
+    --transition-speed: 0.3s;
+}
+
+/* configurações gerais */
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    background-color: var(--color-background-one);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* configurações gerais fim */
+/* cabeçalho */
+
+/* icones*/
+header {
+    background-image: url(../assets/Earth.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100dvh;
+    color: var(--color-white);
+}
+
+.hero {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0 var(--spacing-lg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    background-color: var(--gradient);
+}
+.destaque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 1% 23%;
+
+}
+
+.destaque h1 {
+    text-transform: uppercase;
+    font-size: 3.4rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.destaque p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#logo {
+    width: 6rem;
+    height: 6rem;
+    flex-shrink: 0;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.hero-icons {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+/* icones fim */
+/* menu */
+.daltonic-switcher,
+.theme-switcher {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: var(--spacing-lg);
+    height: var(--spacing-lg);
+}
+
+.theme-switcher {
+    border-radius: 50%;
+    border: 2px solid var(--color-white);
+    background-color: var(--color-background-dark);
+}
+
+.button-menu-mobile {
+    display: none;
+}
+
+.menu {
+    margin-left: auto;
+}
+
+.menu-items {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.menu-items li>a {
+    font-weight: bold;
+    font-size: var(--spacing-sm);
+}
+
+/* menu fim*/
+/* cabeçalho fim*/
+
+/* configurações gerais main */
+.cabecalho-conteudo {
+    text-align: center;
+     margin-top: 50px
+}
+
+.cabecalho-conteudo>h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 4rem;
+    margin-top: 50px
+}
+
+.cabecalho-conteudo>p {
+    margin-top: 50px;
+    font-size: var(--spacing-lg);
+}
+
+.conteudo {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.box {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    text-align: center;
+    border-radius: 30px;
+    background-color: var(--color-white);
+    margin: 20px;
+    padding: 5% 3%;
+    flex-basis: 30%;
+    flex-grow: 1;
+}
+
+.card>h4 {
+    margin-top: 20px;
+    font-size: var(--spacing-lg);
+}
+
+.card>p {
+    margin-top: 10px;
+    font-size: var(--spacing-md);
+}
+
+#tecnologias,
+#publico-alvo {
+    background-color: var(--color-white);
+}
+
+/* configurações gerais main */
+
+/* problemas */
+
+.destaque-problemas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.destaque-problemas {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.destaque-problemas img {
+    max-width: 4%;
+    height: auto;
+    display: block;
+}
+
+.alerta {
+    width: 50%;
+    padding: 2%;
+    border-radius: 30px;
+    background-color: var(--color-background-red);
+    border-left: 4px solid #FF0000;
+    font-weight: bold;
+}
+
+.alerta h4 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.alerta ul {
+    list-style-type: disc;
+}
+
+/* problemas fim */
+
+/* tecnologias */
+.tecnologia {
+    background-color: var(--color-background-blue-one);
+    padding: 10px; 
+}
+
+.destaque-tecnologia {
+    padding: 3% 2%; 
+    text-align: center;
+    background-color: var(--color-background-blue-two);
+    border-radius: 40px;
+    max-width: 75%; 
+    margin: 0 auto; 
+}
+
+.destaque-tecnologia > h3 {
+    font-size: 2.5rem;
+    color: var(--color-white);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.destaque-tecnologia > p {
+    font-size: 1.5rem; 
+    font-weight: bold;
+}
+
+.indices {
+    margin-top: 10px ;
+    display: flex;
+    justify-content: space-around; 
+    text-align: center;
+    padding: 10px 0;
+}
+
+.indices > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.8rem; 
+    margin: 0 10px; 
+}
+
+.indices > div > span {
+    font-weight: bold;
+    color: var(--color-ice);
+}
+
+.indices > div > p {
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+/* tecnologias fim */
+/* objetivos */
+
+/* objetivos fim */
+
+/* card-destaque */
+.box-destaque {
+    border-radius: 30px;
+    display: flex;
+    gap: 20px;
+    background-color: var(--color-white);
+    margin: 0 auto; 
+    max-width: 75%;
+}
+
+.card-destaque-conteudo h3 {
+    margin-top: 30px;
+    font-size: var(--spacing-mlg); 
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.card-destaque-conteudo >  p {
+    font-size: var(--spacing-lg); 
+    margin-bottom: 21%;
+}
+
+.card-destaque-conteudo img {
+    width: 45%; 
+    left: 0;
+    height: auto; 
+}
+
+.card-destaque-conteudo > .botao{
+    border-radius: 20px;
+    width: 50px;
+    padding: 5% 10%;
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--color-white);
+    background-color: var(--color-background-blue-three);
+}
+/* card-destaque fim */
+
+
+
+/* responsividade */
+@media (max-width: 950px) {
+    .box {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px 0;
+        flex-basis: auto;
+    }
+
+    .card>h4 {
+        font-size: var(--spacing-md);
+    }
+
+    .card>p {
+        font-size: var(--spacing-sm);
+    }
+
+    .indices {
+        flex-direction: column;
+    }
+    .indices > div{
+        margin-top: 20px;
+    }
+}
+
+/* responsividade fim*/
