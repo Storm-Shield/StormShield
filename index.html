@@ -5,10 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/style/style.css">
+    <link rel="stylesheet" href="./src/style/loading.css">
     <title>StormShield</title>
 </head>
 
 <body>
+    <!-- Inicio Loading page -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="logo-titulo-container">
+                <img src="./src/assets/LogoStormShield.png" alt="Logo StormShield" class="logo">
+                <h1 class="">Bem Vindo<br>ao <span>StormShield</span></h1>
+            </div>
+            <div class="progress-bar-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+            <p id="loading-percentage">0%</p>
+            <p class="loading-text">Proteção inteligente para quem mais precisa</p>
+        </div>
+    </div>
+
+
+
+    <!-- Final Loading page -->
     <header>
         <div class="hero">
             <div id="logo">
@@ -283,6 +302,7 @@
     </footer>
 
     <script src=""></script>
+    <script src="./src/script/loading.js"></script>
 </body>
 
 </html>
