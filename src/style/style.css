@@ -13,9 +13,12 @@
 :root {
     --color-white: #FFFFFF;
     --color-red: #FF0000;
+    --color-ice: #7DF1F5;
     --color-background-one: #F2F2F2;
     --color-background-dark: #000000;
     --color-background-red: #F3DADA;
+    --color-background-blue-one: #C2F6F4;
+    --color-background-blue-two: #06ACE9;
     --gradient: rgba(0, 0, 0, .3);
     --transition: .5s;
     --spacing-sm: 1rem;
@@ -26,7 +29,7 @@
     /* 32px */
     --spacing-mlg: 3rem;
 
-    --sizing-icons: 2rem;
+    --sizing-icons: 5rem;
     --transition-speed: 0.3s;
 }
 
@@ -81,6 +84,28 @@ header {
     overflow: hidden;
     backdrop-filter: blur(5px);
     background-color: var(--gradient);
+}
+.destaque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 1% 23%;
+
+}
+
+.destaque h1 {
+    text-transform: uppercase;
+    font-size: 3.4rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.destaque p {
+    text-align: center;
+    font-size: 1.2rem;
 }
 
 #logo {
@@ -137,38 +162,6 @@ header {
 }
 
 /* menu fim*/
-/* destaque */
-.destaque {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 83vh;
-    padding: 1% 30%;
-
-}
-
-.destaque h1 {
-    text-transform: uppercase;
-    font-size: 3.4rem;
-    font-weight: bolder;
-    text-align: center;
-    margin-bottom: 6rem;
-}
-
-.destaque p {
-    text-align: center;
-    font-size: 1.2rem;
-}
-
-.conteudo {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    align-items: center;
-}
-
-/* destaque fim */
 /* cabeçalho fim*/
 
 /* configurações gerais main */
@@ -188,19 +181,17 @@ header {
     font-size: 2.5rem;
 }
 
+.conteudo {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .box {
     margin-top: 50px;
     margin-bottom: 50px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 8%;
-}
-
-.conteudo {
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 .card {
@@ -208,11 +199,13 @@ header {
     border-radius: 30px;
     background-color: var(--color-white);
     margin: 20px;
-    padding: 3%;
+    padding: 5% 3%;
+    flex-basis: 30%;
+    flex-grow: 1;
 }
 
 .card>h4 {
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: var(--spacing-lg);
 }
 
@@ -221,13 +214,16 @@ header {
     font-size: var(--spacing-md);
 }
 
+#problemas,
+#objetivos,
+#beneficios {
+    background-color: var(--color-background-one);
+}
+
 /* configurações gerais main */
 
 /* problemas */
-#problemas {
-    background-color: var(--color-background-one);
-    width: 100%;
-}
+
 
 .destaque-problemas {
     display: grid;
@@ -265,7 +261,6 @@ header {
 
 .alerta h4 {
     margin-bottom: 10px;
-
     font-size: 1.5rem;
 }
 
@@ -273,6 +268,94 @@ header {
     list-style-type: disc;
 }
 
-
-
 /* problemas fim */
+
+/* tecnologias */
+.tecnologia {
+    background-color: var(--color-background-blue-one);
+    padding: 15px;
+}
+
+.destaque-tecnologia {
+    padding: 5% 3%;
+    text-align: center;
+    background-color: var(--color-background-blue-two);
+    border-radius: 60px;
+}
+
+.destaque-tecnologia>h3 {
+    font-size: 4rem;
+    color: var(--color-white);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.destaque-tecnologia>p {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.indices {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.indices>div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.indices>div>span {
+    font-weight: bold;
+    color: var(--color-ice);
+}
+
+.indices>div>p {
+
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+/* tecnologias fim */
+/* objetivos */
+
+/* objetivos fim */
+
+
+/* responsividade */
+@media (max-width: 950px) {
+    .box {
+        flex-direction: column;
+        /* Stacks items vertically */
+        align-items: center;
+        /* Centers items when stacked */
+        gap: 30px;
+        /* Adjust gap for vertical stacking */
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px 0;
+        flex-basis: auto;
+    }
+
+    .card>h4 {
+        font-size: var(--spacing-md);
+    }
+
+    .card>p {
+        font-size: var(--spacing-sm);
+    }
+
+    .indices {
+        flex-direction: column;
+    }
+    .indices > div{
+        margin-top: 20px;
+    }
+}
+
+/* responsividade fim*/
