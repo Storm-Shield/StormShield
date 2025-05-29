@@ -12,17 +12,21 @@
 
 :root {
     --color-white: #FFFFFF;
-    --color-background-dark: #00000;
-    --gradient: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .45));
+    --color-red: #FF0000;
+    --color-background-one: #F2F2F2;
+    --color-background-dark: #000000;
+    --color-background-red: #F3DADA;
+    --gradient: rgba(0, 0, 0, .3);
     --transition: .5s;
-    --spacing-md: 1.5rem;
-    /* 24px */
     --spacing-sm: 1rem;
     /* 16px */
     --spacing-md: 1.5rem;
     /* 24px */
     --spacing-lg: 2rem;
     /* 32px */
+    --spacing-mlg: 3rem;
+
+    --sizing-icons: 2rem;
     --transition-speed: 0.3s;
 }
 
@@ -70,8 +74,14 @@ header {
     width: 100%;
     align-items: center;
     padding: 0 var(--spacing-lg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    background-color: var(--gradient);
 }
-
 
 #logo {
     width: 10rem;
@@ -98,8 +108,8 @@ header {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    width: 3rem;
-    height: 3rem;
+    width: var(--spacing-mlg);
+    height: var(--spacing-mlg);
 }
 
 .theme-switcher {
@@ -123,33 +133,146 @@ header {
 
 .menu-items li>a {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: var(--spacing-md);
 }
 
 /* menu fim*/
 /* destaque */
 .destaque {
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 2% 30%;
-   
+    height: 83vh;
+    padding: 1% 30%;
+
 }
 
 .destaque h1 {
     text-transform: uppercase;
-    font-size: 3.5rem;
+    font-size: 3.4rem;
     font-weight: bolder;
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
 }
 
-.destaque p{ 
+.destaque p {
     text-align: center;
-   font-size: 1.2rem;
+    font-size: 1.2rem;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
 }
 
 /* destaque fim */
-
 /* cabeçalho fim*/
+
+/* configurações gerais main */
+.cabecalho-conteudo {
+    text-align: center;
+}
+
+.cabecalho-conteudo>h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 5rem;
+    margin-top: 50px
+}
+
+.cabecalho-conteudo>p {
+    margin-top: 50px;
+    font-size: 2.5rem;
+}
+
+.box {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8%;
+}
+
+.conteudo {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card {
+    text-align: center;
+    border-radius: 30px;
+    background-color: var(--color-white);
+    margin: 20px;
+    padding: 3%;
+}
+
+.card>h4 {
+    margin-top: 10px;
+    font-size: var(--spacing-lg);
+}
+
+.card>p {
+    margin-top: 10px;
+    font-size: var(--spacing-md);
+}
+
+/* configurações gerais main */
+
+/* problemas */
+#problemas {
+    background-color: var(--color-background-one);
+    width: 100%;
+}
+
+.destaque-problemas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Creates two columns of equal width */
+    gap: 20px;
+    /* Adds space between grid cells */
+    align-items: flex-start;
+    /* Aligns items to the top of their grid areas */
+}
+
+.destaque-problemas {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.destaque-problemas img {
+    max-width: 4%;
+    height: auto;
+    display: block;
+}
+
+.alerta {
+    width: 50%;
+    padding: 2%;
+    border-radius: 30px;
+    background-color: var(--color-background-red);
+    border-left: 4px solid #FF0000;
+    font-weight: bold;
+}
+
+.alerta h4 {
+    margin-bottom: 10px;
+
+    font-size: 1.5rem;
+}
+
+.alerta ul {
+    list-style-type: disc;
+}
+
+
+
+/* problemas fim */
