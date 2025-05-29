@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const progressBar = document.getElementById('progress-bar');
     const loadingPercentage = document.getElementById('loading-percentage');
     const loadingScreen = document.getElementById('loading-screen');
-    const mainContent = document.getElementById('main-content');
 
     let progress = 0;
     const intervalTime = 50; // Intervalo de atualização em milissegundos
@@ -31,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function() {
         loadingScreen.style.opacity = '0';
         setTimeout(() => {
             loadingScreen.style.display = 'none';
-            mainContent.style.display = 'block';
             document.body.style.overflow = 'auto'; // Restaura o scroll
         }, 500); // Tempo igual à transição de opacidade
     }

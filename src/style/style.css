@@ -45,6 +45,7 @@ body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     background-color: var(--color-background-one);
+    overflow: hidden;
 }
 
 a {
@@ -61,7 +62,8 @@ img {
     max-width: 100%;
 }
 
-/* configurações gerais fim */
+/* configurações gerais página fim */
+
 /* cabeçalho */
 
 /* icones*/
@@ -87,6 +89,7 @@ header {
     backdrop-filter: blur(5px);
     background-color: var(--gradient);
 }
+
 .destaque {
     display: flex;
     justify-content: center;
@@ -169,7 +172,7 @@ header {
 /* configurações gerais main */
 .cabecalho-conteudo {
     text-align: center;
-     margin-top: 50px
+    margin-top: 50px
 }
 
 .cabecalho-conteudo>h2 {
@@ -271,52 +274,52 @@ header {
 /* tecnologias */
 .tecnologia {
     background-color: var(--color-background-blue-one);
-    padding: 10px; 
+    padding: 10px;
 }
 
 .destaque-tecnologia {
-    padding: 3% 2%; 
+    padding: 3% 2%;
     text-align: center;
     background-color: var(--color-background-blue-two);
     border-radius: 40px;
-    max-width: 75%; 
-    margin: 0 auto; 
+    max-width: 75%;
+    margin: 0 auto;
 }
 
-.destaque-tecnologia > h3 {
+.destaque-tecnologia>h3 {
     font-size: 2.5rem;
     color: var(--color-white);
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.destaque-tecnologia > p {
-    font-size: 1.5rem; 
+.destaque-tecnologia>p {
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 .indices {
-    margin-top: 10px ;
+    margin-top: 10px;
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
     text-align: center;
     padding: 10px 0;
 }
 
-.indices > div {
+.indices>div {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 1.8rem; 
-    margin: 0 10px; 
+    font-size: 1.8rem;
+    margin: 0 10px;
 }
 
-.indices > div > span {
+.indices>div>span {
     font-weight: bold;
     color: var(--color-ice);
 }
 
-.indices > div > p {
+.indices>div>p {
     font-weight: bold;
     color: var(--color-white);
 }
@@ -332,29 +335,30 @@ header {
     display: flex;
     gap: 20px;
     background-color: var(--color-white);
-    margin: 0 auto; 
+    margin: 0 auto;
     max-width: 75%;
 }
 
 .card-destaque-conteudo h3 {
     margin-top: 30px;
-    font-size: var(--spacing-mlg); 
+    font-size: var(--spacing-mlg);
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 30px;
 }
-.card-destaque-conteudo >  p {
-    font-size: var(--spacing-lg); 
+
+.card-destaque-conteudo>p {
+    font-size: var(--spacing-lg);
     margin-bottom: 21%;
 }
 
 .card-destaque-conteudo img {
-    width: 45%; 
+    width: 45%;
     left: 0;
-    height: auto; 
+    height: auto;
 }
 
-.card-destaque-conteudo > .botao{
+.card-destaque-conteudo>.botao {
     border-radius: 20px;
     width: 50px;
     padding: 5% 10%;
@@ -363,6 +367,7 @@ header {
     color: var(--color-white);
     background-color: var(--color-background-blue-three);
 }
+
 /* card-destaque fim */
 
 
@@ -392,7 +397,8 @@ header {
     .indices {
         flex-direction: column;
     }
-    .indices > div{
+
+    .indices>div {
         margin-top: 20px;
     }
 }
