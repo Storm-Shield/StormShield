@@ -67,13 +67,41 @@ img {
 /* cabeçalho */
 
 /* icones*/
-header {
+/* header {
     background-image: url(../assets/Earth.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100dvh;
     color: var(--color-white);
+} */
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100dvh;
+    overflow: hidden;
+    color: var(--color-white);
+}
+
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
 }
 
 .hero {
