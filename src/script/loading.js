@@ -34,17 +34,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 500); // Tempo igual à transição de opacidade
     }
 
-    // Opcional: Se você quiser simular o carregamento de assets reais,
-    // você pode substituir o setInterval por um listener de window.onload
-    // ou Promises para carregar imagens, scripts, etc.
-    // Exemplo simplificado com window.onload:
-    /*
-    window.onload = function() {
-        // Todo o conteúdo da página, incluindo imagens e iframes, foi carregado
-        clearInterval(loadingInterval); // Limpa o intervalo de simulação se ainda estiver rodando
-        progress = 100;
-        updateProgressUI();
-        setTimeout(finishLoading, 300);
-    };
-    */
 });
+
+window.addEventListener('load', () => {
+    document.body.classList.remove('loading');
+    document.body.classList.add('loaded');
+});
+

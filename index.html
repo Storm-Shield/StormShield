@@ -30,25 +30,6 @@
 
     <!-- Final Loading page -->
     <header>
-
-        <header>
-            <video autoplay muted loop playsinline>
-                <source src="./src/assets/videos/HomeEnchente.mp4" type="video/mp4">
-            </video>
-            <div class="header-content">
-                <div class="destaque">
-                <h1>Proteção inteligente<br> para quem mais<br> precisa</h1>
-                <p>Utilizamos sensores IoT, inteligência artificial e análise de dados em tempo real <br> para prevenir e
-                    mitigar os impactos das enchentes urbanas.
-                </p>
-                <button class="btnReserva">SAIBA MAIS</button>
-                </div>
-            </div>
-        </header>
-
-        
-
-
         <div class="hero">
             <figure id="logo">
                 <img src="./src/assets/LogoStormShield.png" alt="Logotipo da StormShield">
@@ -58,11 +39,8 @@
                 <button type="button" class="daltonic-switcher" aria-label="Alternar modo para daltonismo">
                     <img src="./src/assets/DaltonismoChange.png" alt="Ícone de ajuste de cores para daltonismo">
                 </button>
-                <button type="button" class="theme-switcher" aria-label="Alternar tema claro/escuro">
-                </button>
+                <button type="button" class="theme-switcher" aria-label="Alternar tema claro/escuro"></button>
             </div>
-
-
 
             <nav class="menu">
                 <ul class="menu-items">
@@ -73,13 +51,25 @@
                     <li><a href="#beneficios">Benefícios</a></li>
                 </ul>
             </nav>
+
             <div class="button-menu-mobile">
                 <button onclick="menuView()"></button>
             </div>
         </div>
 
+        <video autoplay muted loop playsinline>
+            <source src="./src/assets/videos/HomeEnchente.mp4" type="video/mp4">
+        </video>
 
-
+        <div class="header-content">
+            <div class="destaque">
+                <h1>Proteção inteligente<br> para quem mais<br> precisa</h1>
+                <p>Utilizamos sensores IoT, inteligência artificial e análise de dados em tempo real <br>
+                    para prevenir e mitigar os impactos das enchentes urbanas.
+                </p>
+                <button class="btnReserva">SAIBA MAIS</button>
+            </div>
+        </div>
     </header>
 
     <main>
