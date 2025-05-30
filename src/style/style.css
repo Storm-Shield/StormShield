@@ -106,11 +106,34 @@ header {
     font-weight: bolder;
     text-align: center;
     margin-bottom: 6rem;
+    margin-top: -120px;
 }
 
 .destaque p {
     text-align: center;
     font-size: 1.2rem;
+    
+}
+
+.btnReserva {
+    font-family: "Lexend";
+    width: 320px;
+    height: 70px;
+    margin-top: 1rem;
+    border-radius: 20px;
+    background-color: transparent;
+    border: solid 3px var(--color-white);
+    color: var(--color--primary);
+    font-size: 2.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.btnReserva:hover {
+    background-color: var(--color--primary);
+    color: var(--color--text);
 }
 
 #logo {
