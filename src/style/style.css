@@ -422,8 +422,7 @@ header video {
 .icon-guia {
     background-color: var(--color-background-blue-four);
     border-radius: 50%;
- 
-     width: 6rem;
+    width: 6rem;
     height: 6rem;
     display: flex;
     align-items: center;
@@ -432,26 +431,42 @@ header video {
 /* beneficios fim */
 
 /* card-destaque */
+
 .box-destaque {
     border-radius: 30px;
     display: flex;
-    gap: 20px;
-    background-color: var(--color-white);
+    gap: 0;
+    background-color: #F2F2F2;
     margin: 0 auto;
     max-width: 75%;
+    overflow: hidden; /* ESSENCIAL para o border-radius funcionar direito */
 }
 
-.card-destaque-conteudo h3 {
-    margin-top: 30px;
-    font-size: var(--spacing-mlg);
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 30px;
+.box-destaque > video { 
+    width: 50%; /* Adjust this percentage to make the video wider or narrower */
+    object-fit: cover;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: auto; /* Adjust height as needed, or let it scale proportionally */
+}
+
+.card-destaque-conteudo {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; /* Adjust the content width accordingly */
+}
+
+.card-destaque-conteudo>h3 {
+    font-size: 50px;
+    margin-bottom: 10%;
+    
 }
 
 .card-destaque-conteudo>p {
-    font-size: var(--spacing-lg);
-    margin-bottom: 21%;
+    font-size: 20px;
+    margin-bottom: 10%;
 }
 
 .card-destaque-conteudo img {
@@ -460,16 +475,18 @@ header video {
     height: auto;
 }
 
-.card-destaque-conteudo>.botao {
+.card-destaque-conteudo .botao {
     border-radius: 20px;
-    width: 50px;
-    padding: 5% 10%;
+    padding: 10px 10px; /* aumenta o padding para deixar maior */
     font-weight: bold;
-    font-size: 2rem;
-    color: var(--color-white);
-    background-color: var(--color-background-blue-three);
-}
+    font-size: 1.5rem; /* aumenta a fonte */
+    color: white;
+    background-color: #4788FF;
+    display: inline-block;
+    text-align: center;
+    width: 300px; /* ou defina um width fixo se quiser */
 
+}
 /* card-destaque fim */
 
 /* FOOTER */
