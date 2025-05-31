@@ -20,6 +20,7 @@
     --color-background-blue-one: #C2F6F4;
     --color-background-blue-two: #06ACE9;
     --color-background-blue-three: #4788FF;
+    --color-background-blue-four: #2D52CE;
     --gradient: rgba(0, 0, 0, .3);
     --transition: .5s;
     --spacing-sm: 1rem;
@@ -31,6 +32,8 @@
     --spacing-mlg: 3rem;
 
     --sizing-icons: 5rem;
+    --sizing-benefit-icons: 4rem;
+    --sizing-footer-icons: 1rem;
     --transition-speed: 0.3s;
 }
 
@@ -48,15 +51,6 @@ body {
     overflow: hidden;
 }
 
-body.loading {
-    overflow: hidden;
-}
-
-body.loaded {
-    overflow: auto;
-}
-
-
 a {
     text-decoration: none;
     color: inherit;
@@ -69,6 +63,14 @@ ul {
 img {
     display: block;
     max-width: 100%;
+}
+
+main {
+    padding: 4% 0;
+}
+
+section {
+    padding: 2% 0;
 }
 
 /* configurações gerais página fim */
@@ -142,7 +144,6 @@ header video {
 .destaque p {
     text-align: center;
     font-size: 1.2rem;
-    
 }
 
 .btnReserva {
@@ -282,7 +283,7 @@ header video {
 
 /* problemas */
 
-#problemas{
+#problemas {
     background-color: #F2F2F2;
     padding: 5px
 }
@@ -302,7 +303,7 @@ header video {
     height: 300px;
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .slide {
@@ -322,7 +323,7 @@ header video {
     background-color: #ffe5e5;
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 2px 4px 6px rgba(0,0,0,0.2);
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
     border-left: 5px solid red;
     width: 550px;
 }
@@ -343,6 +344,10 @@ header video {
     margin-bottom: 10px;
 }
 
+.tecnologia, 
+.objetivos{
+       padding: 10px;
+}
 
 /* problemas fim */
 
@@ -350,7 +355,6 @@ header video {
 
 .tecnologia {
     background-color: var(--color-background-blue-one);
-    padding: 10px;
 }
 
 .destaque-tecnologia {
@@ -404,6 +408,28 @@ header video {
 /* objetivos */
 
 /* objetivos fim */
+/* publico-alvo */
+/* publico-alvo fim */
+/* beneficios */
+
+.icon-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.icon-guia {
+    background-color: var(--color-background-blue-four);
+    border-radius: 50%;
+ 
+     width: 6rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* beneficios fim */
 
 /* card-destaque */
 .box-destaque {
@@ -449,25 +475,32 @@ header video {
 /* FOOTER */
 
 .footer {
-    background-color: #0A192F; /* Cor de fundo principal do footer (azul escuro) */
-    color: #E0E0E0; /* Cor do texto principal (cinza claro/branco) */
-    padding: 50px 50px; /* Espaçamento interno */
+    background-color: #0A192F;
+    /* Cor de fundo principal do footer (azul escuro) */
+    color: #E0E0E0;
+    /* Cor do texto principal (cinza claro/branco) */
+    padding: 50px 50px;
+    /* Espaçamento interno */
 
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores */
-    gap: 150px; /* Espaço entre as colunas */
+    flex-wrap: wrap;
+    /* Permite que os itens quebrem para a próxima linha em telas menores */
+    gap: 150px;
+    /* Espaço entre as colunas */
     margin-bottom: 30px;
 }
 
 
 .footer-contact,
 .footer-solutions {
-    flex: 1; /* Permite que as seções cresçam */
-    min-width: 220px; /* Largura mínima para evitar que fiquem muito espremidas */
+    flex: 1;
+    /* Permite que as seções cresçam */
+    min-width: 220px;
+    /* Largura mínima para evitar que fiquem muito espremidas */
 
 }
 
@@ -483,25 +516,31 @@ header video {
 
 
 .footer h3 {
-    font-size: 20px; 
-    color: #FFFFFF; /* Cor dos títulos das seções */
-    margin-top: 0; /* Remove margem superior padrão do h3 */
+    font-size: 20px;
+    color: #FFFFFF;
+    /* Cor dos títulos das seções */
+    margin-top: 0;
+    /* Remove margem superior padrão do h3 */
     margin-bottom: 20px;
     margin-left: 0px;
 }
 
 .footer-contact p {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px; /* espaço entre ícone e texto */
-  margin: 10px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    /* espaço entre ícone e texto */
+    margin: 10px 0;
 }
 
 .footer-contact p i {
-  width: 20px;         /* largura fixa pros ícones */
-  text-align: center;  /* centraliza os ícones */
-  margin-top: 4px;     /* ajusta verticalmente se precisar */
-  color:#0DF7FF;
+    width: 20px;
+    /* largura fixa pros ícones */
+    text-align: center;
+    /* centraliza os ícones */
+    margin-top: 4px;
+    /* ajusta verticalmente se precisar */
+    color: #0DF7FF;
 }
 
 .footer-contact a,
@@ -512,11 +551,13 @@ header video {
 
 .footer-contact a:hover,
 .footer-solutions a:hover {
-    color: #00AEEF; /* Cor ao passar o mouse nos links */
+    color: #00AEEF;
+    /* Cor ao passar o mouse nos links */
 }
 
 .footer-divider {
-    border-top: 1px solid #3A4D6D; /* Cor da linha divisória (cinza azulado) */
+    border-top: 1px solid #3A4D6D;
+    /* Cor da linha divisória (cinza azulado) */
     margin-top: 10px;
     margin-bottom: 25px;
 }
@@ -526,18 +567,22 @@ header video {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 15px; /* Espaço entre o copyright e o botão em telas menores */
+    gap: 15px;
+    /* Espaço entre o copyright e o botão em telas menores */
 }
 
 .footer-copyright {
     font-size: 15px;
-    color: #FFFFFF; /* Cor do texto de copyright (cinza azulado claro) */
-    margin: 0; /* Remove margem padrão do parágrafo */
+    color: #FFFFFF;
+    /* Cor do texto de copyright (cinza azulado claro) */
+    margin: 0;
+    /* Remove margem padrão do parágrafo */
     text-decoration: underline;
 }
 
 .footer-button {
-    background-color: #006D8B; /* Cor de fundo do botão (azul petróleo mais escuro) */
+    background-color: #006D8B;
+    /* Cor de fundo do botão (azul petróleo mais escuro) */
     color: #FFFFFF;
     padding: 10px 25px;
     border: none;
@@ -550,7 +595,8 @@ header video {
 }
 
 .footer-button:hover {
-    background-color: #008AB8; /* Cor do botão ao passar o mouse */
+    background-color: #008AB8;
+    /* Cor do botão ao passar o mouse */
 }
 
 
