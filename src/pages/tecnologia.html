@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/src/style/style.css">
     <link rel="icon" type="image/png" href="/src/assets/favicon.png" sizes="512x512">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <title>StormShield</title>
+    <title>StormShield - Tecnologias</title>
 </head>
 
 <body>
@@ -49,18 +49,47 @@
         <div class="header-content">
             <div class="destaque">
                 <h1>TECNOLOGIAS <br>UTILIZADAS NO PROTÓTIPO</h1>
-                
-                <button class="btnReserva">SAIBA MAIS</button>
+                <a href="#sensores-iot" class="btnReserva">SAIBA MAIS</a>
             </div>
         </div>
     </header>
 
+    <main>
+        <section class="secao-tecnologia" id="sensores-iot">
+            <div class="secao-container">
+                <div class="secao-texto">
+                    <h2>Sensores IoT: Os Olhos do Sistema</h2>
+                    <p>
+                        Utilizamos sensores ultrassônicos de alta precisão (como o HC-SR04) para monitorar em tempo real o nível da água em rios, bueiros e áreas críticas. Esses dispositivos enviam dados constantemente para nossa plataforma na nuvem, formando a base do nosso sistema de alerta.
+                    </p>
+                    <ul>
+                        <li><i class="fas fa-wifi"></i> Conectividade sem fio para fácil instalação.</li>
+                        <li><i class="fas fa-battery-full"></i> Baixo consumo de energia, ideal para locais remotos.</li>
+                        <li><i class="fas fa-cloud-upload-alt"></i> Envio de dados seguro e criptografado.</li>
+                    </ul>
+                </div>
+                <div class="secao-imagem">
+                    <img src="https://www.e-sentral.com/images/book_title/10499/9789672859132.jpg" alt="Ilustração de um sensor IoT medindo nível da água.">
+                </div>
+            </div>
+        </section>
 
-    
-
-    
-
-    <!-- FOOTER -->
+        <section class="secao-tecnologia" id="prototipo-tinkercad">
+             <div class="secao-container reverse">
+                <div class="secao-texto">
+                    <h2>Protótipo Funcional com Arduino no Tinkercad</h2>
+                    <p>
+                        Para validar nosso conceito, criamos um protótipo totalmente funcional utilizando um Arduino UNO na plataforma Tinkercad. O circuito simula a leitura do sensor, processa a informação e aciona alertas visuais (LEDs) e sonoros (buzzer) quando o nível da água atinge um ponto de perigo.
+                    </p>
+                    <p>Este protótipo prova que a lógica é viável, escalável e de baixo custo, permitindo uma implementação rápida em cidades que mais precisam.</p>
+                    <a href="#" class="secao-botao">Veja o Projeto no Tinkercad</a>
+                </div>
+                <div class="secao-imagem">
+                    <img src="https://i.ytimg.com/vi/Qp25_Dsc2aA/maxresdefault.jpg" alt="Imagem do circuito do protótipo no Tinkercad com Arduino.">
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="footer-content">
@@ -73,11 +102,10 @@
                 <p><i class="fas fa-phone-alt"></i> <a href="tel:+5511975534223">55+ 11 9755 - 34223</a></p>
                 <p><i class="fas fa-map-marker-alt"></i> Av. Brigadeiro Faria Lima, 2543 – Itaim Bibi, São Paulo – SP, 04538-133</p>
             </div>
-
             <div class="footer-solutions">
                 <h3>Soluções</h3>
                 <p><a href="#">Projeto Tinkercard</a></p>
-                </div>
+            </div>
         </div>
         <div class="footer-divider"></div>
         <div class="footer-bottom">
@@ -86,9 +114,7 @@
         </div>
     </footer>
 
-
     <script src="/src/script/script.js"></script>
-
 
 </body>
 </html>
