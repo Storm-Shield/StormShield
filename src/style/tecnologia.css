@@ -180,6 +180,8 @@
 }
 
 /* Diagrama do Circuito */
+
+
 .diagrama-box {
     background-color: var(--color-white);
     padding: 25px;
@@ -203,7 +205,7 @@
     width: fit-content;
     margin-left: auto;
     margin-top: 20px;
-    background-color: #6c757d; /* Cinza escuro */
+    background-color: #77BACC; /* Cinza escuro */
     color: var(--color-white);
     padding: 10px 25px;
     border-radius: 8px;
@@ -214,5 +216,73 @@
 }
 
 .link-video-botao:hover {
-    background-color: #5a6268;
+    background-color: #126C84;
+}
+
+/* COMO FUNCIONA */
+
+
+#como-funciona {
+    background-color: #f4f7f9; 
+    padding: 80px 5%;
+}
+
+.container-funcionamento {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+/* Títulos da seção */
+.titulo-principal {
+    margin-bottom: 40px;
+}
+
+.titulo-principal h2 {
+    font-size: 2.2rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.titulo-principal p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Caixa de cada etapa */
+.etapa-box {
+    display: flex;
+    align-items: flex-start; 
+    gap: 30px;
+    background-color: var(--color-white);
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px; 
+}
+
+.etapa-box:last-child {
+    margin-bottom: 0;
+}
+
+/* Ícone da etapa */
+.etapa-icone {
+    font-size: 1.8rem;
+    color: #00b4d8; 
+    margin-top: 5px; /* Ajuste para alinhar visualmente com o título */
+}
+
+/* Conteúdo de texto da etapa */
+.etapa-conteudo h3 {
+    font-size: 1.3rem;
+    color: #0DF7FF; 
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.etapa-conteudo p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
 }
