@@ -48,7 +48,7 @@ body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     background-color: var(--color-background-one);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 a {

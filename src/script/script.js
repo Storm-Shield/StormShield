@@ -10,8 +10,3 @@ setInterval(() => {
     slides[index].classList.add('active');
 }, 3000); // troca a cada 3 segundos
 
-
-window.addEventListener('load', () => {
-    document.body.classList.remove('loading');
-    document.body.classList.add('loaded');
-});

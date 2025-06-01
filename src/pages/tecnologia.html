@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="/src/style/style.css">
+    <link rel="stylesheet" href="/src/style/tecnologia.css">
     <link rel="icon" type="image/png" href="/src/assets/favicon.png" sizes="512x512">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <title>StormShield - Tecnologias</title>
 </head>
 
@@ -55,40 +55,70 @@
     </header>
 
     <main>
-        <section class="secao-tecnologia" id="sensores-iot">
-            <div class="secao-container">
-                <div class="secao-texto">
-                    <h2>Sensores IoT: Os Olhos do Sistema</h2>
-                    <p>
-                        Utilizamos sensores ultrassônicos de alta precisão (como o HC-SR04) para monitorar em tempo real o nível da água em rios, bueiros e áreas críticas. Esses dispositivos enviam dados constantemente para nossa plataforma na nuvem, formando a base do nosso sistema de alerta.
-                    </p>
-                    <ul>
-                        <li><i class="fas fa-wifi"></i> Conectividade sem fio para fácil instalação.</li>
-                        <li><i class="fas fa-battery-full"></i> Baixo consumo de energia, ideal para locais remotos.</li>
-                        <li><i class="fas fa-cloud-upload-alt"></i> Envio de dados seguro e criptografado.</li>
-                    </ul>
+        <section id="processo">
+            <div class="container-processo">
+                
+                <div class="sobre-projeto-box">
+                    <div class="icone-box-grande">
+                        <i class="#"></i>
+                    </div>
+                    <div class="texto-box">
+                        <h2>Sobre o projeto</h2>
+                        <p>
+                            Este protótipo foi desenvolvido para demonstrar a aplicação prática de conceitos de eletrônica e programação utilizando a plataforma Arduino. O sistema integra diversos sensores e atuadores para criar uma solução funcional e eficiente, demonstrando como a tecnologia pode ser aplicada para resolver problemas do mundo real.
+                        </p>
+                    </div>
                 </div>
-                <div class="secao-imagem">
-                    <img src="https://www.e-sentral.com/images/book_title/10499/9789672859132.jpg" alt="Ilustração de um sensor IoT medindo nível da água.">
+
+                <h2 class="titulo-processo">Processo de Desenvolvimento:</h2>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icone">
+                            <i class="#"></i>
+                        </div>
+                        <div class="timeline-conteudo">
+                            <h3>1. Pesquisa</h3>
+                            <p>Levantamento de requisitos, estudo de componentes disponíveis e análise de projetos similares para definir a melhor abordagem técnica.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icone">
+                            <i class="#"></i>
+                        </div>
+                        <div class="timeline-conteudo">
+                            <h3>2. Design do circuito</h3>
+                            <p>Elaboração do esquema elétrico, seleção de componentes e planejamento da montagem física do protótipo, considerando eficiência e confiabilidade.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icone">
+                            <i class="#"></i>
+                        </div>
+                        <div class="timeline-conteudo">
+                            <h3>3. Programação (C++)</h3>
+                            <p>Desenvolvimento do código-fonte para controlar o Arduino e seus componentes, implementando a lógica de funcionamento e otimizando o desempenho.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icone">
+                            <i class="#"></i>
+                        </div>
+                        <div class="timeline-conteudo">
+                            <h3>4. IA</h3>
+                            <p>Levantamento de requisitos, estudo de componentes disponíveis e análise de projetos similares para definir a melhor abordagem técnica.</p>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </section>
 
-        <section class="secao-tecnologia" id="prototipo-tinkercad">
-             <div class="secao-container reverse">
-                <div class="secao-texto">
-                    <h2>Protótipo Funcional com Arduino no Tinkercad</h2>
-                    <p>
-                        Para validar nosso conceito, criamos um protótipo totalmente funcional utilizando um Arduino UNO na plataforma Tinkercad. O circuito simula a leitura do sensor, processa a informação e aciona alertas visuais (LEDs) e sonoros (buzzer) quando o nível da água atinge um ponto de perigo.
-                    </p>
-                    <p>Este protótipo prova que a lógica é viável, escalável e de baixo custo, permitindo uma implementação rápida em cidades que mais precisam.</p>
-                    <a href="#" class="secao-botao">Veja o Projeto no Tinkercad</a>
-                </div>
-                <div class="secao-imagem">
-                    <img src="https://i.ytimg.com/vi/Qp25_Dsc2aA/maxresdefault.jpg" alt="Imagem do circuito do protótipo no Tinkercad com Arduino.">
-                </div>
-            </div>
-        </section>
+
+        
     </main>
 
     <footer class="footer">
@@ -114,7 +144,6 @@
         </div>
     </footer>
 
-    <script src="/src/script/script.js"></script>
 
 </body>
 </html>
