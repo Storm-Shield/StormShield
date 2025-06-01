@@ -229,51 +229,66 @@
             </div><!-- conteundo da section -->
         </section> <!-- section objetivos -->
 
-        <section id="publico-alvo">
-            <div class="cabecalho-conteudo">
-                <h2>Público Alvo</h2>
+        Entendido! Você quer um layout alternado (zigue-zague), onde o primeiro e o terceiro itens tenham a imagem à direita, e o segundo item tenha a imagem à esquerda.
+
+Essa é uma excelente escolha de design. A maneira mais moderna e eficiente de fazer isso é manter a estrutura do HTML sempre igual para todos os itens e usar o CSS para criar o efeito de inversão visualmente. Isso é mais fácil de dar manutenção e funciona automaticamente se você decidir adicionar um quarto ou quinto item no futuro.
+
+Para conseguir o efeito desejado, faremos dois pequenos ajustes: um no seu HTML e um no CSS.
+
+Passo 1: Ajuste o seu HTML
+Para que o CSS funcione de forma inteligente, a estrutura de todos os cards precisa ser a mesma. Note que no seu código, o segundo item tem a tag <img> solta e antes do texto.
+
+Vamos padronizar todos para terem a mesma ordem (texto primeiro, imagem depois) e remover a classe reverse-layout, que não será mais necessária.
+
+Seu HTML deve ficar assim:
+
+HTML
+
+<section id="publico-alvo">
+    <div class="cabecalho-conteudo">
+        <h2>Público Alvo</h2>
+    </div>
+
+    <div class="publico-alvo-cards">
+        <div class="publico-alvo-item">
+            <div class="publico-alvo-texto">
+                <h3>Populações em Áreas <br> de Risco</h3>
+                <p>“Mais de 8 milhões de brasileiros vivem em áreas sujeitas a inundações, sendo que 55% não têm
+                    sistemas de drenagem.”</p>
+                <p class="fonte"><cite>IBGE</cite></p>
             </div>
+            <figure class="publico-alvo-imagem">
+                <img src="./src/assets/Enchentes/Enchentes1.jpg" alt="Cidade inundada.">
+            </figure>
+        </div>
 
-            <div class="publico-alvo-cards">
-                <div class="publico-alvo-item">
-                    <div class="publico-alvo-texto">
-                        <h3>Populações em Áreas de Risco</h3>
-                        <p>“Mais de 8 milhões de brasileiros vivem em áreas sujeitas a inundações, sendo que 55% não têm
-                            sistemas de drenagem.”</p>
-                        <p class="fonte">Fonte: <cite>IBGE</cite></p>
-                    </div>
-                    <figure class="publico-alvo-imagem">
-                        <img src="./src/assets/cidade-alagada-populacoes.jpg" alt="Cidade inundada.">
-                    </figure>
-                </div>
-
-                <div class="publico-alvo-item reverse-layout">
-
-                    <img src="./src/assets/globo-dados.jpg" alt="Terra em argila.">
-
-                    <div class="publico-alvo-texto">
-                        <h3>Defesa Civil e Órgãos Municipais</h3>
-                        <p>“Menos de 30% dos municípios têm sistemas integrados de alerta e resposta. Com StormShield,
-                            as prefeituras ganham painéis com dados em tempo real, otimizando ações e salvando
-                            recursos.”</p>
-                        <p class="fonte">Fonte: <cite>CEMADEN / Ministério da Integração</cite></p>
-                    </div>
-                </div>
-
-                <div class="publico-alvo-item">
-                    <div class="publico-alvo-texto">
-                        <h3>Cidades com Déficit em Infraestrutura</h3>
-                        <p>“Regiões como a Baixada Fluminense, Vale do Itajaí e Nordeste enfrentam enchentes frequentes
-                            por falta de estrutura.”</p>
-                        <p class="fonte">Fonte: <cite>IBGE</cite></p>
-                    </div>
-                    <figure class="publico-alvo-imagem">
-                        <img src="./src/assets/infraestrutura-cidade-alagada.jpg" alt="Cidade inundada.">
-                    </figure>
-                </div>
-
+        <div class="publico-alvo-item">
+            <div class="publico-alvo-texto">
+                <h3>Defesa Civil e Órgãos Municipais</h3>
+                <p>“Menos de 30% dos municípios têm sistemas integrados de alerta e resposta. Com StormShield,
+                    as prefeituras ganham painéis com dados em tempo real, otimizando ações e salvando
+                    recursos.”</p>
+                <p class="fonte"><cite>CEMADEN / Ministério da Integração</cite></p>
             </div>
-        </section>
+            <figure class="publico-alvo-imagem">
+                <img src="./src/assets/Enchentes/Enchentes1.jpg" alt="Terra em argila.">
+            </figure>
+        </div>
+
+        <div class="publico-alvo-item">
+            <div class="publico-alvo-texto">
+                <h3>Cidades com Déficit em Infraestrutura</h3>
+                <p>“Regiões como a Baixada Fluminense, Vale do Itajaí e Nordeste enfrentam enchentes frequentes
+                    por falta de estrutura.”</p>
+                <p class="fonte"><cite>IBGE</cite></p>
+            </div>
+            <figure class="publico-alvo-imagem">
+                <img src="./src/assets/Enchentes/Enchentes1.jpg" alt="Cidade inundada.">
+            </figure>
+        </div>
+
+    </div>
+</section>
 
         <section id="beneficios">
             <div class="cabecalho-conteudo"> <!-- cabeçalho da section -->
