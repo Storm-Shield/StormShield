@@ -147,7 +147,7 @@ header video {
 }
 
 .btnReserva {
-    font-family: "Lexend";
+    /* font-family: "Lexend"; */
     width: 320px;
     height: 70px;
     margin-top: 1rem;
@@ -407,35 +407,45 @@ header video {
 /* tecnologias fim */
 
 /* objetivos */
-/* ? */
+
+
+.cabecalho-conteudo-objetivos  h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cabecalho-conteudo-objetivos  p{
+    font-size: 25px;
+    text-align: center;
+}
+
 /* objetivos fim */
 
-
-
 /* publico-alvo */
-
 
 #publico-alvo {
     padding: 80px 20px;
     background-color: #ffffff;
-    font-family: 'Arial', sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
-.cabecalho-conteudo {
-    text-align: center;
+.cabecalho-conteudo-publico {
+    text-align: left;
+    margin-left: 235px;
     margin-bottom: 60px;
 }
 
-.cabecalho-conteudo h2 {
-    font-size: 2.5rem;
+.cabecalho-conteudo-publico h2 {
+    font-size: 3rem;
     font-weight: bold;
-    color: #212529;
+    color: #000000;
 }
 
 .publico-alvo-cards {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 100px;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -446,9 +456,8 @@ header video {
     gap: 40px;
 }
 
-/* NOVO: Regra para inverter a ordem dos itens pares */
 .publico-alvo-item:nth-child(even) {
-    flex-direction: row-reverse; /* Inverte a ordem visual: [Imagem | Texto] */
+    flex-direction: row-reverse; 
 }
 
 .publico-alvo-texto {
@@ -456,10 +465,11 @@ header video {
 }
 
 .publico-alvo-texto h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
-    color: #212529;
+    color: #305874;
     margin-bottom: 15px;
+    margin-top: -100px;
     line-height: 1.3;
 }
 
@@ -472,7 +482,7 @@ header video {
 
 .publico-alvo-texto p.fonte {
     font-size: 0.9rem;
-    color: #343a40;
+    color: #305874;
     font-weight: 500;
     margin-bottom: 0;
     display: flex;
@@ -482,6 +492,7 @@ header video {
 .publico-alvo-texto p.fonte::before {
     content: '|';
     margin-right: 10px;
+    font-weight: bold;
 }
 
 .publico-alvo-texto p.fonte cite {
@@ -502,18 +513,20 @@ header video {
 }
 
 
-
-
-
 /* publico-alvo fim */
 
 /* beneficios */
 
-.cabecaolho h2{
-    font-size: 30px;
+.cabecalho-conteudo-beneficios h2{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
+
 }
-.cabecalho-conteudo p{
+.cabecalho-conteudo-beneficios p{
     font-size: 30px;
+    text-align: center;
+   
 }
 
 .icon-box{
