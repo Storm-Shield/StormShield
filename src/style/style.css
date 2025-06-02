@@ -201,12 +201,12 @@ header video {
     background-color: var(--color-background-dark);
 }
 
-.menu-mobile,
+.mobile,
 .button-menu-mobile {
     display: none;
 }
 
-.menu-desktop {
+.desktop {
     margin-left: auto;
 }
 
@@ -220,7 +220,7 @@ header video {
     font-size: var(--spacing-sm);
 }
 
-#menu-hamburger {
+.menu-hamburger {
     background-color: transparent;
     border: none;
 }
@@ -819,7 +819,7 @@ header video {
 
     /* --- Menu Mobile (Hamburguer) --- */
 
-    .menu-desktop {
+    .desktop {
         display: none;
     }
 
@@ -829,6 +829,7 @@ header video {
         margin-top: 10px;
         right: 12px;
         z-index: 100000;
+        cursor: pointer;
        
     }
 
@@ -837,7 +838,7 @@ header video {
         border: none;
     }
 
-    .menu-mobile {
+    .mobile {
         position: fixed;
         display: flex;
         align-items: center;

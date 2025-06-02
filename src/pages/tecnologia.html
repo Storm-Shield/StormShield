@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="/src/style/style.css">
-    <link rel="stylesheet" href="/src/style/tecnologia.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/tecnologia.css">
+    <link rel="stylesheet" href="../style/icons.css">
     <link rel="icon" type="image/png" href="/src/assets/favicon.png" sizes="512x512">
     <title>StormShield - Tecnologias</title>
 </head>
@@ -26,16 +27,33 @@
                 </button>
             </div>
 
-            <nav class="menu">
-                <ul class="menu-items">
-                    <li><a href="/index.html">Voltar a Tela Inicial</a></li>
+            <nav class="menu desktop">
+                <ul class="menu-desktop-itens ">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/index.html#problemas">Problema</a></li>
+                    <li><a href="/index.html#objetivos">Objetivos</a></li>
+                    <li><a href="/index.html#publico-alvo">Público - Alvo</a></li>
+                    <li><a href="/index.html#beneficios">Benefícios</a></li>
                 </ul>
             </nav>
 
-            <div class="button-menu-mobile">
-                <button onclick="menuView()"></button>
-            </div>
         </div>
+
+      <div class="button-menu-mobile">
+            <button class="button-menu-mobile menu-hamburger" onclick="menuView()"><span 
+                    class="charm--menu-hamburger"></span></button>
+        </div>
+       </div>
+    
+        <nav class="menu mobile ">
+            <ul class="menu-mobile-itens ">
+                  <li><a href="/index.html">Home</a></li>
+                    <li><a href="/index.html#problemas">Problema</a></li>
+                    <li><a href="/index.html#objetivos">Objetivos</a></li>
+                    <li><a href="/index.html#publico-alvo">Público - Alvo</a></li>
+                    <li><a href="/index.html#beneficios">Benefícios</a></li>
+            </ul>
+        </nav>
 
         <video autoplay muted loop playsinline>
             <source src="/src/assets/videos/heroTecnologie.mp4" type="video/mp4">
@@ -52,7 +70,7 @@
     <main>
         <section id="processo">
             <div class="container-processo">
-                
+
                 <div class="sobre-projeto-box">
                     <div class="icone-box-grande">
                         <i class="#"></i>
@@ -60,7 +78,10 @@
                     <div class="texto-box">
                         <h2>Sobre o projeto</h2>
                         <p>
-                            Este protótipo foi desenvolvido para demonstrar a aplicação prática de conceitos de eletrônica e programação utilizando a plataforma Arduino. O sistema integra diversos sensores e atuadores para criar uma solução funcional e eficiente, demonstrando como a tecnologia pode ser aplicada para resolver problemas do mundo real.
+                            Este protótipo foi desenvolvido para demonstrar a aplicação prática de conceitos de
+                            eletrônica e programação utilizando a plataforma Arduino. O sistema integra diversos
+                            sensores e atuadores para criar uma solução funcional e eficiente, demonstrando como a
+                            tecnologia pode ser aplicada para resolver problemas do mundo real.
                         </p>
                     </div>
                 </div>
@@ -74,7 +95,8 @@
                         </div>
                         <div class="timeline-conteudo">
                             <h3>1. Pesquisa</h3>
-                            <p>Levantamento de requisitos, estudo de componentes disponíveis e análise de projetos similares para definir a melhor abordagem técnica.</p>
+                            <p>Levantamento de requisitos, estudo de componentes disponíveis e análise de projetos
+                                similares para definir a melhor abordagem técnica.</p>
                         </div>
                     </div>
 
@@ -84,7 +106,8 @@
                         </div>
                         <div class="timeline-conteudo">
                             <h3>2. Design do circuito</h3>
-                            <p>Elaboração do esquema elétrico, seleção de componentes e planejamento da montagem física do protótipo, considerando eficiência e confiabilidade.</p>
+                            <p>Elaboração do esquema elétrico, seleção de componentes e planejamento da montagem física
+                                do protótipo, considerando eficiência e confiabilidade.</p>
                         </div>
                     </div>
 
@@ -94,7 +117,8 @@
                         </div>
                         <div class="timeline-conteudo">
                             <h3>3. Programação (C++)</h3>
-                            <p>Desenvolvimento do código-fonte para controlar o Arduino e seus componentes, implementando a lógica de funcionamento e otimizando o desempenho.</p>
+                            <p>Desenvolvimento do código-fonte para controlar o Arduino e seus componentes,
+                                implementando a lógica de funcionamento e otimizando o desempenho.</p>
                         </div>
                     </div>
 
@@ -104,7 +128,8 @@
                         </div>
                         <div class="timeline-conteudo">
                             <h3>4. IA</h3>
-                            <p>Levantamento de requisitos, estudo de componentes disponíveis e análise de projetos similares para definir a melhor abordagem técnica.</p>
+                            <p>Levantamento de requisitos, estudo de componentes disponíveis e análise de projetos
+                                similares para definir a melhor abordagem técnica.</p>
                         </div>
                     </div>
                 </div>
@@ -156,65 +181,74 @@
                     <div class="componente-card">
                         <div class="card-titulo">1x - Sensor de Distância</div>
                         <figure class="card-imagem">
-                            <img src="/src/assets/Tecnologies/SensoDistacia.png" alt="Sensor de Distância Ultrassônico HC-SR04">
+                            <img src="/src/assets/Tecnologies/SensoDistacia.png"
+                                alt="Sensor de Distância Ultrassônico HC-SR04">
                         </figure>
                     </div>
 
                     <div class="componente-card">
                         <div class="card-titulo">3x - Leds</div>
                         <figure class="card-imagem">
-                            <img src="/src/assets/Tecnologies/LedsArduino.jpg" alt="Sensor de Distância Ultrassônico HC-SR04">
+                            <img src="/src/assets/Tecnologies/LedsArduino.jpg"
+                                alt="Sensor de Distância Ultrassônico HC-SR04">
                         </figure>
                     </div>
 
                     <div class="componente-card">
                         <div class="card-titulo">1x - Protoboard</div>
                         <figure class="card-imagem">
-                            <img src="/src/assets/Tecnologies/Protoboard.jpg" alt="Sensor de Distância Ultrassônico HC-SR04">
+                            <img src="/src/assets/Tecnologies/Protoboard.jpg"
+                                alt="Sensor de Distância Ultrassônico HC-SR04">
                         </figure>
                     </div>
 
                     <div class="componente-card">
                         <div class="card-titulo">1x - Sensor de Chuva</div>
                         <figure class="card-imagem">
-                            <img src="/src/assets/Tecnologies/SensorChuva.webp" alt="Sensor de Distância Ultrassônico HC-SR04">
+                            <img src="/src/assets/Tecnologies/SensorChuva.webp"
+                                alt="Sensor de Distância Ultrassônico HC-SR04">
                         </figure>
                     </div>
 
                     <div class="componente-card">
                         <div class="card-titulo">1x - Buzzer</div>
                         <figure class="card-imagem">
-                            <img src="/src/assets/Tecnologies/Buzzer.jpg" alt="Sensor de Distância Ultrassônico HC-SR04">
+                            <img src="/src/assets/Tecnologies/Buzzer.jpg"
+                                alt="Sensor de Distância Ultrassônico HC-SR04">
                         </figure>
                     </div>
 
                     <div class="componente-card">
                         <div class="card-titulo">31x - Jumper</div>
                         <figure class="card-imagem">
-                            <img src="/src/assets/Tecnologies/Jumper.jpg" alt="Sensor de Distância Ultrassônico HC-SR04">
+                            <img src="/src/assets/Tecnologies/Jumper.jpg"
+                                alt="Sensor de Distância Ultrassônico HC-SR04">
                         </figure>
                     </div>
 
                     <div class="componente-card">
                         <div class="card-titulo">3x - Resistor</div>
                         <figure class="card-imagem">
-                            <img src="/src/assets/Tecnologies/Resistor.jpg" alt="Sensor de Distância Ultrassônico HC-SR04">
+                            <img src="/src/assets/Tecnologies/Resistor.jpg"
+                                alt="Sensor de Distância Ultrassônico HC-SR04">
                         </figure>
                     </div>
 
                 </div>
 
                 <h2 class="titulo-secao">Diagrama do Circuito</h2>
-                
+
                 <div class="diagrama-box">
                     <figure>
-<<<<<<< HEAD
-                        <img src="/src/assets/Tecnologies/Simulacao.png" alt="Diagrama do circuito do projeto no Tinkercad">
-=======
-                        <img src="/src/assets/Tecnologies/ProjetoTinkecard.png" alt="Diagrama do circuito do projeto no Tinkercad">
->>>>>>> 621dc71f8db3c70616ad8a541c59d8ee112cd064
+                        <<<<<<< HEAD <img src="/src/assets/Tecnologies/Simulacao.png"
+                            alt="Diagrama do circuito do projeto no Tinkercad">
+                            =======
+                            <img src="/src/assets/Tecnologies/ProjetoTinkecard.png"
+                                alt="Diagrama do circuito do projeto no Tinkercad">
+                            >>>>>>> 621dc71f8db3c70616ad8a541c59d8ee112cd064
                     </figure>
-                    <a href="https://www.tinkercad.com/things/0Rh5vCgqv37-global-solution" class="link-video-botao" target="_blank" rel="SimulaçãoTinkecard">LINK DO PROJETO</a>
+                    <a href="https://www.tinkercad.com/things/0Rh5vCgqv37-global-solution" class="link-video-botao"
+                        target="_blank" rel="SimulaçãoTinkecard">LINK DO PROJETO</a>
                 </div>
             </div>
         </section>
@@ -233,7 +267,8 @@
                     </div>
                     <div class="etapa-conteudo">
                         <h3>1. Coleta de dados</h3>
-                        <p>Levantamento de requisitos, estudo de componentes disponíveis e análise de projetos similares para definir a melhor abordagem técnica.</p>
+                        <p>Levantamento de requisitos, estudo de componentes disponíveis e análise de projetos similares
+                            para definir a melhor abordagem técnica.</p>
                     </div>
                 </div>
 
@@ -243,17 +278,19 @@
                     </div>
                     <div class="etapa-conteudo">
                         <h3>2. Armazenamento</h3>
-                        <p>Elaboração do esquema elétrico, seleção de componentes e planejamento da montagem física do protótipo, considerando eficiência e confiabilidade.</p>
+                        <p>Elaboração do esquema elétrico, seleção de componentes e planejamento da montagem física do
+                            protótipo, considerando eficiência e confiabilidade.</p>
                     </div>
                 </div>
-                
+
                 <div class="etapa-box">
                     <div class="etapa-icone">
                         <i class="#"></i>
                     </div>
                     <div class="etapa-conteudo">
                         <h3>3. I.A</h3>
-                        <p>Desenvolvimento do código-fonte para controlar o Arduino e seus componentes, implementando a lógica de funcionamento e otimizando o desempenho.</p>
+                        <p>Desenvolvimento do código-fonte para controlar o Arduino e seus componentes, implementando a
+                            lógica de funcionamento e otimizando o desempenho.</p>
                     </div>
                 </div>
 
@@ -261,7 +298,7 @@
         </section>
 
 
-        
+
     </main>
 
     <footer class="footer">
@@ -287,6 +324,8 @@
         </div>
     </footer>
 
-
+    
+    <script src="../script/hamburguer.js"></script>
 </body>
+
 </html>
