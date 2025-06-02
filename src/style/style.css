@@ -122,7 +122,7 @@ header video {
     background-color: var(--gradient);
 }
 
-.destaque {
+.destaque-header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,7 +132,7 @@ header video {
 
 }
 
-.destaque h1 {
+.destaque-header h1 {
     text-transform: uppercase;
     font-size: 3.4rem;
     font-weight: bolder;
@@ -140,7 +140,7 @@ header video {
     margin-bottom: 3rem;
 }
 
-.destaque p {
+.destaque-header p {
     text-align: center;
     font-size: 1.2rem;
 }
@@ -413,13 +413,13 @@ header video {
 /* objetivos */
 
 
-.cabecalho-conteudo-objetivos h2 {
+.objetivos-cabecalho  h2 {
     font-size: 40px;
     text-align: center;
     margin-bottom: 10px;
 }
 
-.cabecalho-conteudo-objetivos p {
+.objetivos-cabecalho p {
     font-size: 25px;
     text-align: center;
 }
@@ -434,13 +434,13 @@ header video {
     font-family: "Inter", sans-serif;
 }
 
-.cabecalho-conteudo-publico {
+.publico-cabecalho {
     text-align: left;
     margin-left: 235px;
     margin-bottom: 60px;
 }
 
-.cabecalho-conteudo-publico h2 {
+.publico-cabecalho  h2 {
     font-size: 3rem;
     font-weight: bold;
     color: #000000;
@@ -744,11 +744,11 @@ header video {
 
     /* --- Cabeçalho e Título Principal --- */
 
-    .destaque {
+    .destaque-header {
         padding: 1% 10%;
     }
 
-    .destaque h1 {
+    .destaque-header h1 {
         font-size: 2.8rem;
     }
 
@@ -765,7 +765,7 @@ header video {
 
     /* --- Seção Público-Alvo --- */
 
-    .cabecalho-conteudo-publico {
+    .publico-cabecalho  {
         margin-left: 5%;
         text-align: center;
     }
@@ -872,24 +872,20 @@ header video {
 
     /* --- Tipografia Geral --- */
 
-    .cabecalho-conteudo h2,
-    .cabecalho-conteudo-objetivos h2,
-    .cabecalho-conteudo-beneficios h2 {
+    .cabecalho-conteudo h2{
         font-size: 2.5rem;
     }
 
-    .cabecalho-conteudo p,
-    .cabecalho-conteudo-objetivos p,
-    .cabecalho-conteudo-beneficios p {
+    .cabecalho-conteudo p{
         font-size: 1.1rem;
     }
 
-    .destaque h1 {
+    .destaque-header h1 {
         font-size: 2rem;
         line-height: 1.2;
     }
 
-    .destaque p {
+    .destaque-header p {
         font-size: 1rem;
     }
 
