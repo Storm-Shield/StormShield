@@ -721,33 +721,195 @@ header video {
 
 
 /* responsividade */
-@media (max-width: 950px) {
-    .box {
+
+/* Regras para Tablets e Telas Menores (até 1024px) */
+
+@media (max-width: 1024px) {
+
+    /* --- Ajustes Gerais --- */
+
+    section {
+        padding: 8% 4%; 
+    }
+
+    /* --- Cabeçalho e Título Principal --- */
+
+    .destaque {
+        padding: 1% 10%; 
+    }
+
+    .destaque h1 {
+        font-size: 2.8rem;
+    }
+
+    /* --- Seção Problemas --- */
+
+    .destaque-problemas {
+        flex-direction: column; 
+    }
+
+    .alerta {
+        width: 100%;
+        max-width: 550px;
+    }
+
+    /* --- Seção Público-Alvo --- */
+
+    .cabecalho-conteudo-publico {
+        margin-left: 5%; 
+        text-align: center;
+    }
+    .publico-alvo-item,
+    .publico-alvo-item:nth-child(even) {
         flex-direction: column;
+        gap: 20px;
+    }
+
+    .publico-alvo-imagem {
+        flex-basis: auto;
+        max-width: 80%; 
+    }
+
+    .publico-alvo-texto h3 {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .publico-alvo-texto p.fonte {
+        justify-content: center;
+    }
+
+     /* --- Card Destaque com Vídeo --- */
+
+    .box-destaque {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .box-destaque > video {
+        width: 100%;
+        height: 250px; 
+        border-radius: 30px 30px 0 0; 
+    }
+    
+    .card-destaque-conteudo {
+        text-align: center;
+    }
+
+    .card-destaque-conteudo .botao {
+        margin: 0 auto; 
+    }
+}
+
+
+/* Regras para Celulares (até 768px) */
+
+@media (max-width: 768px) {
+
+    /* --- Menu Mobile (Hamburguer) --- */
+
+    .menu {
+        display: none;
+    }
+
+    .button-menu-mobile {
+        display: block; 
+        margin-left: auto; 
+    }
+    
+  
+    
+    /* --- Tipografia Geral --- */
+
+    .cabecalho-conteudo h2,
+    .cabecalho-conteudo-objetivos h2,
+    .cabecalho-conteudo-beneficios h2 {
+        font-size: 2.5rem; 
+    }
+    
+    .cabecalho-conteudo p,
+    .cabecalho-conteudo-objetivos p,
+    .cabecalho-conteudo-beneficios p {
+        font-size: 1.1rem;
+    }
+
+    .destaque h1 {
+        font-size: 2rem; 
+        line-height: 1.2;
+    }
+
+    .destaque p {
+        font-size: 1rem;
+    }
+
+    .btnReserva {
+        width: 280px;
+        height: 60px;
+        font-size: 2rem;
+    }
+    
+    /* --- Estrutura dos Cards --- */
+
+    .box {
+        flex-direction: column; 
         align-items: center;
         gap: 30px;
     }
 
     .card {
         width: 90%;
-        margin: 10px 0;
+        max-width: 400px;
+        margin: 0;
         flex-basis: auto;
     }
+    
+    /* --- Slideshow --- */
 
-    .card>h4 {
-        font-size: var(--spacing-md);
+    .slideshow {
+        width: 100%;
+        height: 250px;
     }
 
-    .card>p {
-        font-size: var(--spacing-sm);
+    /* --- Card Destaque (Tecnologias) --- */
+
+    .destaque-tecnologia {
+        max-width: 100%;
+        border-radius: 20px;
+        padding: 20px;
     }
 
+    .destaque-tecnologia h3 {
+        font-size: 1.8rem;
+    }
+     .destaque-tecnologia p {
+        font-size: 1.1rem;
+    }
+    
     .indices {
         flex-direction: column;
+        gap: 15px;
     }
 
-    .indices>div {
-        margin-top: 20px;
+    /* --- Footer --- */
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .footer-logo {
+        width: 150px;
+        margin-top: 0;
+    }
+    
+    .footer-contact p {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        gap: 20px;
     }
 }
 
