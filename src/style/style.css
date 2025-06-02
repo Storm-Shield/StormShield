@@ -70,7 +70,7 @@ main {
 }
 
 section {
-    padding: 2% 0;
+    padding: 6% 0;
 }
 
 /* configurações gerais página fim */
@@ -225,7 +225,7 @@ header video {
 /* configurações gerais main */
 .cabecalho-conteudo {
     text-align: center;
-    margin-top: 50px
+    /* margin-top: 50px */
 }
 
 .cabecalho-conteudo>h2 {
@@ -284,7 +284,6 @@ header video {
 
 #problemas {
     background-color: #F2F2F2;
-    padding: 5px
 }
 
 .destaque-problemas {
@@ -345,7 +344,7 @@ header video {
 
 .tecnologia, 
 .objetivos{
-       padding: 10px;
+    padding: 10px;
 }
 
 /* problemas fim */
