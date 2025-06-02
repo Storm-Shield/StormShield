@@ -1,4 +1,3 @@
-// Comentario paara se quiser alterar algo
 
 document.addEventListener("DOMContentLoaded", function() {
 
