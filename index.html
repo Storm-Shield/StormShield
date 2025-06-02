@@ -14,7 +14,7 @@
 
 <body>
 
-    <div id="loading-screen">
+    <!-- <div id="loading-screen">
         <div class="loading-content">
             <div class="logo-titulo-container">
                 <img src="./src/assets/LogoStormShield.png" alt="Logo StormShield" class="logo">
@@ -26,7 +26,7 @@
             <p id="loading-percentage">0%</p>
             <p class="loading-text">Proteção inteligente para quem mais precisa</p>
         </div>
-    </div>
+    </div> -->
 
     <header>
         <div class="hero">
@@ -40,9 +40,8 @@
                 </button>
                 <button type="button" class="theme-switcher" aria-label="Alternar tema claro/escuro"></button>
             </div>
-
-            <nav class="menu">
-                <ul class="menu-items">
+            <nav class="menu-desktop">
+                <ul class="menu-desktop-itens ">
                     <li><a href="#problemas">Problema</a></li>
                     <li><a href="#tecnologias">Tecnologias</a></li>
                     <li><a href="#objetivos">Objetivos</a></li>
@@ -51,10 +50,21 @@
                 </ul>
             </nav>
 
-            <div class="button-menu-mobile">
-                <button onclick="menuView()"></button>
-            </div>
+          
         </div>
+  <div class="button-menu-mobile">
+                <button class="button-menu-mobile" onclick="menuView()"><span id="menu-hamburger" class="charm--menu-hamburger"></span></button>
+            </div>
+<nav class="menu-mobile ">
+                <ul class="menu-mobile-itens ">
+                    <li><a href="#problemas">Problema</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#objetivos">Objetivos</a></li>
+                    <li><a href="#publico-alvo">Público - Alvo</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                </ul>
+            </nav>
+              
 
         <video autoplay muted loop playsinline>
             <source src="./src/assets/videos/HomeEnchente.mp4" type="video/mp4">
@@ -335,7 +345,8 @@
     </footer>
 
     <script src="./src/script/script.js"></script>
-    <script src="./src/script/loading.js"></script>
+    <script src="./src/script/hamburguer.js"></script>
+    <!-- <script src="./src/script/loading.js"></script> -->
     <script src="./src/script/animacao.js"></script>
 
 </body>

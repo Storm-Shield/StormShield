@@ -201,22 +201,28 @@ header video {
     background-color: var(--color-background-dark);
 }
 
+.menu-mobile,
 .button-menu-mobile {
     display: none;
 }
 
-.menu {
+.menu-desktop {
     margin-left: auto;
 }
 
-.menu-items {
+.menu-desktop-itens {
     display: flex;
     gap: var(--spacing-md);
 }
 
-.menu-items li>a {
+.menu-desktop-itens li>a {
     font-weight: bold;
     font-size: var(--spacing-sm);
+}
+
+#menu-hamburger {
+    background-color: transparent;
+    border: none;
 }
 
 /* menu fim*/
@@ -342,8 +348,8 @@ header video {
     margin-bottom: 10px;
 }
 
-.tecnologia, 
-.objetivos{
+.tecnologia,
+.objetivos {
     padding: 10px;
 }
 
@@ -407,13 +413,13 @@ header video {
 /* objetivos */
 
 
-.cabecalho-conteudo-objetivos  h2{
+.cabecalho-conteudo-objetivos h2 {
     font-size: 40px;
     text-align: center;
     margin-bottom: 10px;
 }
 
-.cabecalho-conteudo-objetivos  p{
+.cabecalho-conteudo-objetivos p {
     font-size: 25px;
     text-align: center;
 }
@@ -455,7 +461,7 @@ header video {
 }
 
 .publico-alvo-item:nth-child(even) {
-    flex-direction: row-reverse; 
+    flex-direction: row-reverse;
 }
 
 .publico-alvo-texto {
@@ -515,19 +521,20 @@ header video {
 
 /* beneficios */
 
-.cabecalho-conteudo-beneficios h2{
+.cabecalho-conteudo-beneficios h2 {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 40px;
 
 }
-.cabecalho-conteudo-beneficios p{
+
+.cabecalho-conteudo-beneficios p {
     font-size: 30px;
     text-align: center;
-   
+
 }
 
-.icon-box{
+.icon-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -543,6 +550,7 @@ header video {
     align-items: center;
     justify-content: center;
 }
+
 /* beneficios fim */
 
 /* card-destaque */
@@ -554,15 +562,16 @@ header video {
     background-color: #F2F2F2;
     margin: 0 auto;
     max-width: 75%;
-    overflow: hidden; /* ESSENCIAL para o border-radius funcionar direito */
+    overflow: hidden;
+    /* ESSENCIAL para o border-radius funcionar direito */
 }
 
-.box-destaque > video { 
-    width: 50%; 
+.box-destaque>video {
+    width: 50%;
     object-fit: cover;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-    height: auto; 
+    height: auto;
 }
 
 .card-destaque-conteudo {
@@ -570,13 +579,13 @@ header video {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%; 
+    width: 100%;
 }
 
 .card-destaque-conteudo>h3 {
     font-size: 50px;
     margin-bottom: 10%;
-    
+
 }
 
 .card-destaque-conteudo>p {
@@ -592,16 +601,17 @@ header video {
 
 .card-destaque-conteudo .botao {
     border-radius: 20px;
-    padding: 10px 10px; 
+    padding: 10px 10px;
     font-weight: bold;
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     color: white;
     background-color: #4788FF;
     display: inline-block;
     text-align: center;
-    width: 300px; 
+    width: 300px;
 
 }
+
 /* card-destaque fim */
 
 /* FOOTER */
@@ -729,13 +739,13 @@ header video {
     /* --- Ajustes Gerais --- */
 
     section {
-        padding: 8% 4%; 
+        padding: 8% 4%;
     }
 
     /* --- Cabeçalho e Título Principal --- */
 
     .destaque {
-        padding: 1% 10%; 
+        padding: 1% 10%;
     }
 
     .destaque h1 {
@@ -745,7 +755,7 @@ header video {
     /* --- Seção Problemas --- */
 
     .destaque-problemas {
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     .alerta {
@@ -756,9 +766,10 @@ header video {
     /* --- Seção Público-Alvo --- */
 
     .cabecalho-conteudo-publico {
-        margin-left: 5%; 
+        margin-left: 5%;
         text-align: center;
     }
+
     .publico-alvo-item,
     .publico-alvo-item:nth-child(even) {
         flex-direction: column;
@@ -767,7 +778,7 @@ header video {
 
     .publico-alvo-imagem {
         flex-basis: auto;
-        max-width: 80%; 
+        max-width: 80%;
     }
 
     .publico-alvo-texto h3 {
@@ -779,25 +790,25 @@ header video {
         justify-content: center;
     }
 
-     /* --- Card Destaque com Vídeo --- */
+    /* --- Card Destaque com Vídeo --- */
 
     .box-destaque {
         flex-direction: column;
         max-width: 90%;
     }
 
-    .box-destaque > video {
+    .box-destaque>video {
         width: 100%;
-        height: 250px; 
-        border-radius: 30px 30px 0 0; 
+        height: 250px;
+        border-radius: 30px 30px 0 0;
     }
-    
+
     .card-destaque-conteudo {
         text-align: center;
     }
 
     .card-destaque-conteudo .botao {
-        margin: 0 auto; 
+        margin: 0 auto;
     }
 }
 
@@ -808,25 +819,64 @@ header video {
 
     /* --- Menu Mobile (Hamburguer) --- */
 
-    .menu {
+    .menu-desktop {
         display: none;
     }
 
     .button-menu-mobile {
-        display: block; 
-        margin-left: auto; 
+        position: fixed;
+        display: block;
+        margin-top: 10px;
+        right: 12px;
+        z-index: 100000;
+       
     }
-    
-  
-    
+
+    .button-menu-mobile>button {
+        background: none;
+        border: none;
+    }
+
+    .menu-mobile {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        width: 40%;
+        z-index: 100;
+        transition: right .5s ease-in-out, visibility .5s linear;
+        background-color: #06222c;
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+
+         right: -40%; /* Pelo menos a largura do menu para ele sumir totalmente */
+    height: 100vh;
+    }
+
+    .menu-mobile-itens li {
+        margin-left: 10px;
+        margin-bottom: 50%;
+        text-align: justify;
+        justify-content: center;
+        width: 100%;
+        font-size: 1.5rem;
+        /* border-bottom: 2px solid #ccc; */
+        font-weight: bolder;
+       
+    }
+
+    .open {
+        right: 0;
+        padding: 2%;
+    }
+
     /* --- Tipografia Geral --- */
 
     .cabecalho-conteudo h2,
     .cabecalho-conteudo-objetivos h2,
     .cabecalho-conteudo-beneficios h2 {
-        font-size: 2.5rem; 
+        font-size: 2.5rem;
     }
-    
+
     .cabecalho-conteudo p,
     .cabecalho-conteudo-objetivos p,
     .cabecalho-conteudo-beneficios p {
@@ -834,7 +884,7 @@ header video {
     }
 
     .destaque h1 {
-        font-size: 2rem; 
+        font-size: 2rem;
         line-height: 1.2;
     }
 
@@ -847,11 +897,11 @@ header video {
         height: 60px;
         font-size: 2rem;
     }
-    
+
     /* --- Estrutura dos Cards --- */
 
     .box {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
         gap: 30px;
     }
@@ -862,7 +912,7 @@ header video {
         margin: 0;
         flex-basis: auto;
     }
-    
+
     /* --- Slideshow --- */
 
     .slideshow {
@@ -881,10 +931,11 @@ header video {
     .destaque-tecnologia h3 {
         font-size: 1.8rem;
     }
-     .destaque-tecnologia p {
+
+    .destaque-tecnologia p {
         font-size: 1.1rem;
     }
-    
+
     .indices {
         flex-direction: column;
         gap: 15px;
@@ -903,7 +954,7 @@ header video {
         width: 150px;
         margin-top: 0;
     }
-    
+
     .footer-contact p {
         justify-content: center;
     }
@@ -919,12 +970,12 @@ header video {
 /* ANIMAÇÂO */
 
 .efeito-scroll {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .efeito-scroll.visivel {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }

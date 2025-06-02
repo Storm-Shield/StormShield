@@ -1,19 +1,34 @@
-export function setupHamburgerMenu() {
-    console.log("1. Função setupHamburgerMenu foi chamada!"); // Pista 1
+const body = document.body;
 
-    const hamburguerIcon = document.querySelector('.hamburguer');
-    const menu = document.querySelector('.menu');
+function menuView() {
 
-    console.log("2. Elemento hamburguer encontrado:", hamburguerIcon); // Pista 2
-    console.log("3. Elemento menu encontrado:", menu); // Pista 3
+    body.style.overflowY = 'hidden';
+    console.log('evento chamado')
+    let menu = document.querySelector('.menu-mobile');
+    let icon = document.getElementById('menu-hamburger')
 
-    if (hamburguerIcon && menu) {
-        hamburguerIcon.addEventListener('click', () => {
-            console.log("4. CLIQUE DETECTADO!"); // Pista 4
-            menu.classList.toggle('active');
-            hamburguerIcon.classList.toggle('active');
-        });
+    if (menu.classList.contains('open')) {
+        menu.classList.remove('open');
+        body.style.overflowY = 'auto';
+        icon.className = "charm--menu-hamburger";
     } else {
-        console.error("ERRO: Não foi possível encontrar '.hamburguer' ou '.menu'. Verifique as classes no HTML.");
+        menu.classList.add('open');
+        body.style.overflowY = 'hidden';
+        icon.className = 'line-md--menu-to-close-transition';
     }
+
 }
+
+document.addEventListener('click', function (event) {
+
+    let menu = document.querySelector('.menu-mobile');
+    let icon = document.getElementById('menu-hamburger');
+    let menuMobile = document.querySelector('.button-menu-mobile')
+    if (!menu.contains(event.target) && !menuMobile.contains(event.target)) {
+        if (menu.classList.contains('open')) {
+            menu.classList.remove('open');
+            icon.className = "charm--menu-hamburger";
+            body.style.overflowY = 'auto';
+        }
+    }
+})
