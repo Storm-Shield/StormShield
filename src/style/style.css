@@ -774,12 +774,12 @@ header video {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 
-.btn:hover{
+.btn:hover:not([disabled]){
     background-color: #0a4466;
 }
 .btn:active {
   background-color: #073047; /* Verde mais escuro */
-  color: #bdbdbd;
+  color: #F2F2F2;
 }
 
 #next-btn{
