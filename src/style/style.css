@@ -770,6 +770,8 @@ header video {
     height: 5rem;
     margin-bottom: 45px;
     cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover{
@@ -777,13 +779,23 @@ header video {
 }
 .btn:active {
   background-color: #073047; /* Verde mais escuro */
-  color: black;
+  color: #bdbdbd;
 }
 
 #next-btn{
     display: none;
 }
 /* parte lateral direita quiz fim*/
+
+/* erros e acertos */
+
+.correct{
+    background-color: #44DB88 ;
+}
+
+.incorrect{
+    background-color: #EB4E4E;
+}
 
 /* quiz fim */
 
