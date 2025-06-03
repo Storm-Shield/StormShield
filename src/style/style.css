@@ -621,41 +621,39 @@ header video {
     align-items: center;
     justify-content: center;
 }
-
 .container-quiz {
     display: flex;
     border-radius: 16px;
     background: #FFFEFE;
-    width: 60%;
+    
     height: 100%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
+/* parte lateral esquerda quiz */
 
-.quiz-box {
-    padding: 5%;
-}
 
 .cadastro-box {
-    background: #063855;
+    background: #083A56;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 50%;
+    width: 35%;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
     color: #FFFEFE;
-    padding: 7%;
+    padding: 5%;
    left: 0;
 }
 
 .cadastro-box>h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #FFFEFE;
     margin-bottom: 10px;
 }
 
 .cadastro-box p {
     font-weight: 200;
-    font-size: 0.7rem;
+    font-size: 1rem;
 }
 
 .cadastro-box>form {
@@ -725,6 +723,67 @@ header video {
     padding: 20px;
     text-transform: uppercase;
 }
+
+#start:hover{
+    background: #0a4669;
+}
+#start:active{
+    background: #073047;
+    color: #b6b6b6;
+    border:1px solid #b6b6b6;
+}
+
+/* parte lateral esquerda quiz fim*/
+/* parte lateral direita quiz*/
+.quiz-box {
+   padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.enunciado{
+    background: #F2F2F2;
+    text-align: justify;
+    font-size: 1rem;
+    padding: 3%;
+    color: #083A56;
+
+ box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.quests{
+    left: 0;
+    right: 0;
+   margin-top: 10%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 18px;
+}
+.btn{
+    background-color:#083A56;
+    border: none;
+    color: #F2F2F2;
+    height: 5rem;
+    margin-bottom: 45px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #0a4466;
+}
+.btn:active {
+  background-color: #073047; /* Verde mais escuro */
+  color: black;
+}
+
+#next-btn{
+    display: none;
+}
+/* parte lateral direita quiz fim*/
 
 /* quiz fim */
 
