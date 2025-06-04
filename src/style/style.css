@@ -32,7 +32,7 @@
 
 
     --color-font-one: #000000;
-      --color-font-two: #000000;
+    --color-font-two: #000000;
     --color-font-three: #305874;
     --color-font-h2-destaque-tech: #FFFFFF;
 
@@ -40,6 +40,10 @@
     --color-font-publico-alvo: #495057;
 
     --color-bar-publico-alvo: #000000;
+
+    --color-font-h2-page-tech: #333;
+    --color-font-h3-page-tech: #222;
+    --color-font-p-page-tech: #555;
 
     --gradient: rgba(0, 0, 0, .3);
     --transition: .5s;
@@ -54,7 +58,7 @@
     --sizing-icons: 5rem;
     --sizing-benefit-icons: 4rem;
     --sizing-footer-icons: 1rem;
-    --sizing-icons-page-tech: 2rem;
+    --sizing-icons-page-tech: 1.5rem;
     --transition-speed: 0.3s;
 }
 
@@ -75,6 +79,10 @@ html[data-theme='dark'] {
     --color-font-three: #CCCCCC;
     --color-font-destaque-tech: #FFFFFF;
 
+    --color-font-h2-page-tech: #eceaea;
+    --color-font-h3-page-tech: #d4d4d4;
+    --color-font-p-page-tech: #FFFFFF;
+
     --color-font-publico-alvo: #CCCCCC;
     --color-bar-publico-alvo: #CCCCCC;
 
@@ -91,47 +99,21 @@ html[data-theme='blue'] {
     --color-background-tech: #1B263B;
     --color-background-destaque-tech: #1B263B;
 
---color-font-h2-destaque-tech: #FFC107;
+    --color-font-h2-destaque-tech: #FFC107;
     --color-font-one: #FFC107;
     --color-font-two: #FFFFFF;
     --color-font-three: #FFC107;
     --color-font-destaque-tech: #FFC107;
 
+    --color-font-h2-page-tech: #FFC107;
+    --color-font-h3-page-tech: #FFC107;
+    --color-font-p-page-tech: #FFFFFF;
+
     --color-font-publico-alvo: #F0F0F0;
     --color-bar-publico-alvo: #F0F0F0;
 }
 
-html[data-theme='light'] {
-    --color-white: #FFFFFF;
-    --color-red: #FF0000;
-    --color-ice: #7DF1F5;
-    --color-background-one: #F2F2F2;
-    --color-background-two: #FFFFFF;
-    --color-background-dark: #000000;
-
-    --color-background-card-one: #FFFFFF;
-
-    --color-background-tech: #F2F2F2;
-    --color-background-alerta: #ffe5e5;
-
-    --color-background-red: #F3DADA;
-    --color-background-card-tech: #E1F5FE;
-
-
-    --color-background-blue-four: #2D52CE;
-
-    --color-background-destaque-tech: #06ACE9;
-
-
-    --color-font-one: #000000;
-    --color-font-two: #000000;
-    --color-font-three: #305874;
-    --color-font-destaque-tech: #7DF1F5;
-    --color-font-publico-alvo: #495057;
-
-    --color-bar-publico-alvo: #000000;
-
-}
+html[data-theme='light']
 
 /* configurações gerais */
 html {
@@ -288,7 +270,7 @@ header>video {
     gap: var(--spacing-sm);
 }
 
-.menu-desktop-itens{
+.menu-desktop-itens {
     color: var(--color-white);
 }
 
@@ -735,7 +717,8 @@ header>video {
 .container-quiz {
     display: flex;
     border-radius: 16px;
-    background: #FFFEFE;
+    background: var(--color-background-two);
+    border: 1px solid #ffffff;
     width: 100%;
     height: 100%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
@@ -860,12 +843,11 @@ header>video {
 }
 
 .enunciado {
-    background: #F2F2F2;
+    background: var(--color-background-destaque-tech);
     text-align: justify;
     font-size: 1rem;
     padding: 3%;
     color: #083A56;
-
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -980,6 +962,7 @@ header>video {
     align-items: flex-start;
     gap: 10px;
     margin: 10px 0;
+    color: #FFFFFF;
 }
 
 .footer-contact p i {
@@ -1206,6 +1189,7 @@ header>video {
         font-size: 1.5rem;
         /* border-bottom: 2px solid #ccc; */
         font-weight: bolder;
+        color: var(--color-white);
 
     }
 
