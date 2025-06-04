@@ -93,8 +93,10 @@ const quests = [
 
 const questao = document.getElementById('questao');
 const answersBtn = document.querySelector('.quests');
-const nextQuest = document.getElementById('next-btn')
+const nextQuest = document.getElementById('next-btn');
+const inputName = document.getElementById('name');
 
+let userName = ''
 let indexQuestaoAtual = 0;
 let score = 0;
 
@@ -102,8 +104,19 @@ function startQuiz() {
     indexQuestaoAtual = 0;
     score = 0;
 
+
+    if (inputName.value != "" || userName != ''){
+        document.querySelector('.quiz-box').style.display = "flex";
     nextQuest.innerHTML = "Avançar";
+     userName = inputName.value
+     inputName.value = ''
+        document.getElementById('start').disabled = true;
+
     showQuest();
+    }else{
+        alert("Por favor, digite seu nome para realizar o quiz");
+    }
+
 }
 
 function resetState(){
@@ -154,7 +167,7 @@ function selectAnswer(e){
 
 function showScore(){
     resetState();
-    questao.innerHTML = `Você acertou ${score} de ${quests.length}`;
+    questao.innerHTML = `${userName}, você arcertou ${score} de ${quests.length}`;
     nextQuest.innerHTML = "Jogar Novamente";
     nextQuest.style.display = "block";
 
@@ -176,5 +189,3 @@ nextQuest.addEventListener("click", () =>{
         startQuiz();
     }
 })
-
-startQuiz()

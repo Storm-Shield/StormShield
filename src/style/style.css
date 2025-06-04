@@ -66,10 +66,6 @@ img {
     max-width: 100%;
 }
 
-main {
-    padding: 4% 0;
-}
-
 section {
     padding: 6% 0;
 }
@@ -89,7 +85,7 @@ header {
     color: var(--color-white);
 }
 
-header video {
+header>video {
     position: absolute;
     top: 0;
     left: 0;
@@ -219,6 +215,7 @@ header video {
 .menu-desktop-itens li>a {
     font-weight: bold;
     font-size: var(--spacing-sm);
+        font-size: 0.8rem;
 }
 
 .menu-hamburger {
@@ -289,9 +286,7 @@ header video {
 
 /* problemas */
 
-#problemas {
-    background-color: #F2F2F2;
-}
+
 
 .destaque-problemas {
     display: flex;
@@ -352,6 +347,7 @@ header video {
 .tecnologia,
 .objetivos {
     padding: 10px;
+    margin: 10px;
 }
 
 /* problemas fim */
@@ -522,14 +518,14 @@ header video {
 
 /* beneficios */
 
-.cabecalho-conteudo-beneficios h2 {
+.beneficios-cabecalho h2 {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 40px;
 
 }
 
-.cabecalho-conteudo-beneficios p {
+.beneficios-cabecalho p {
     font-size: 30px;
     text-align: center;
 
@@ -617,18 +613,18 @@ header video {
 
 /* quiz */
 #quiz {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 3%;
 }
+
 .container-quiz {
     display: flex;
     border-radius: 16px;
     background: #FFFEFE;
-    
+    width: 100%;
     height: 100%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
+
 /* parte lateral esquerda quiz */
 
 
@@ -642,7 +638,7 @@ header video {
     border-bottom-left-radius: 16px;
     color: #FFFEFE;
     padding: 5%;
-   left: 0;
+    left: 0;
 }
 
 .cadastro-box>h2 {
@@ -663,7 +659,7 @@ header video {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    text-align: center;
 }
 
 #name {
@@ -672,7 +668,7 @@ header video {
     outline: none;
     width: 100%;
     height: 35px;
-    padding:  0 40px;
+    padding: 0 40px;
 }
 
 /* para alterar a cor do placeholder */
@@ -697,6 +693,7 @@ header video {
     color: #F2F2F2;
     ;
 }
+
 /* para alterar a cor do placeholder fim */
 
 .conteiner-nome {
@@ -719,81 +716,97 @@ header video {
     background: transparent;
     color: #FFFEFE;
     border: 1px solid #FFFEFE;
-    margin-top: 50px;
+    margin-top: 31%;
     padding: 20px;
+    cursor: pointer;
     text-transform: uppercase;
 }
 
-#start:hover{
+#start:hover {
     background: #0a4669;
 }
-#start:active{
+
+#start:active {
     background: #073047;
     color: #b6b6b6;
-    border:1px solid #b6b6b6;
+    border: 1px solid #b6b6b6;
 }
 
 /* parte lateral esquerda quiz fim*/
 /* parte lateral direita quiz*/
 .quiz-box {
-   padding: 3%;
+    padding: 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
-.enunciado{
+
+.enunciado {
     background: #F2F2F2;
     text-align: justify;
     font-size: 1rem;
     padding: 3%;
     color: #083A56;
 
- box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
-.quests{
+.quests {
     left: 0;
     right: 0;
-   margin-top: 10%;
+    margin-top: 10%;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 18px;
 }
-.btn{
-    background-color:#083A56;
-    border: none;
+
+#next-btn,
+.btn {
+    background-color: #083A56;
     color: #F2F2F2;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    border: none;
+    cursor: pointer;
+     text-transform: uppercase;
+}
+
+.btn {
     height: 5rem;
     margin-bottom: 45px;
-    cursor: pointer;
     border-radius: 6px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 
-.btn:hover:not([disabled]){
+#next-btn {
+    display: none;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+#next-btn:hover,
+.btn:hover:not([disabled]) {
     background-color: #0a4466;
 }
+
 .btn:active {
-  background-color: #073047; /* Verde mais escuro */
-  color: #F2F2F2;
+    background-color: #073047;
+    color: #F2F2F2;
 }
 
-#next-btn{
-    display: none;
-}
+
+
 /* parte lateral direita quiz fim*/
 
 /* erros e acertos */
 
-.correct{
-    background-color: #44DB88 ;
+.correct {
+    background-color: #44DB88;
 }
 
-.incorrect{
+.incorrect {
     background-color: #EB4E4E;
 }
 
@@ -994,13 +1007,42 @@ header video {
 
     .card-destaque-conteudo .botao {
         margin: 0 auto;
+        width: 100%;
     }
+
+
+    /* outros cards */
+    .tecnologia h4,
+    .objetivos h4 {
+        font-size: 1.5rem;
+    }
+
+    .tecnologia p {
+        font-size: 1rem;
+    }
+
+    /* destaque tech */
+    .indices>div>p {
+        font-size: 1.5rem;
+    }
+
+    /* quiz */
+
+
+    .cadastro-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .cadastro-box p {
+        font-size: 0.5rem;
+    }
+
+
 }
 
+/* Regras para dispositivos (até 800px) */
 
-/* Regras para Celulares (até 768px) */
-
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
     /* --- Menu Mobile (Hamburguer) --- */
 
@@ -1013,7 +1055,7 @@ header video {
         display: block;
         margin-top: 10px;
         right: 12px;
-        z-index: 100000;
+        z-index: 1000;
         cursor: pointer;
 
     }
@@ -1027,7 +1069,7 @@ header video {
         position: fixed;
         display: flex;
         align-items: center;
-        width: 40%;
+        width: 30vw;
         z-index: 100;
         transition: right .5s ease-in-out, visibility .5s linear;
         background-color: #06222c;
@@ -1041,7 +1083,7 @@ header video {
 
     .menu-mobile-itens li {
         margin-left: 10px;
-        margin-bottom: 50%;
+        margin-bottom: 36%;
         text-align: justify;
         justify-content: center;
         width: 100%;
@@ -1145,6 +1187,74 @@ header video {
     .footer-bottom {
         gap: 20px;
     }
+}
+
+/* Regras para dispositivos (até 600px) */
+@media (max-width: 600px) {
+    .menu-mobile-itens li {
+        font-size: 1.2rem;
+
+    }
+
+    .mobile {
+        width: 34vw;
+    }
+}
+
+/* Regras para dispositivos (até 566px) */
+@media (max-width: 566px) {
+
+    .container-quiz {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .cadastro-box {
+        width: 100%;
+        height: 20%;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        border-bottom-left-radius: 0;
+
+    }
+
+    .cadastro-box>form {
+        margin-top: 5px;
+        align-items: unset;
+    }
+
+    .cadastro-box h2 {
+        margin-bottom: 0;
+    }
+
+    .cadastro-box p {
+        text-align: right;
+    }
+
+    .enunciado {
+        margin-top: 10px;
+    }
+
+    #name {
+        width: 100%;
+    }
+
+    #start {
+        padding: 10px;
+        margin-top: 0;
+    }
+
+}
+
+/* Regras para dispositivos (até 460px) */
+@media (max-width: 460px) {
+    .card-destaque-conteudo h3 {
+        font-size: 10vw;
+    }
+
 }
 
 /* responsividade fim*/
