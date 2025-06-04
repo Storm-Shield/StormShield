@@ -9,18 +9,38 @@
 }
 
 /* variables */
-
 :root {
     --color-white: #FFFFFF;
     --color-red: #FF0000;
     --color-ice: #7DF1F5;
     --color-background-one: #F2F2F2;
+    --color-background-two: #FFFFFF;
     --color-background-dark: #000000;
+
+    --color-background-card-one: #FFFFFF;
+
+    --color-background-tech: #F2F2F2;
+    --color-background-alerta: #ffe5e5;
+
     --color-background-red: #F3DADA;
-    --color-background-blue-one: #E1F5FE;
-    --color-background-blue-two: #06ACE9;
-    --color-background-blue-three: #4788FF;
+    --color-background-card-tech: #E1F5FE;
+
+
     --color-background-blue-four: #2D52CE;
+
+    --color-background-destaque-tech: #06ACE9;
+
+
+    --color-font-one: #000000;
+      --color-font-two: #000000;
+    --color-font-three: #305874;
+    --color-font-h2-destaque-tech: #FFFFFF;
+
+    --color-font-destaque-tech: #7DF1F5;
+    --color-font-publico-alvo: #495057;
+
+    --color-bar-publico-alvo: #000000;
+
     --gradient: rgba(0, 0, 0, .3);
     --transition: .5s;
     --spacing-sm: 1rem;
@@ -36,6 +56,81 @@
     --sizing-footer-icons: 1rem;
     --sizing-icons-page-tech: 2rem;
     --transition-speed: 0.3s;
+}
+
+html[data-theme='dark'] {
+    --color-background-one: #1E1E1E;
+    --color-background-two: #2C2C2E;
+
+    --color-background-card-one: #687D7D;
+    --color-background-card-tech: #687D7D;
+
+    --color-background-alerta: #1F0000;
+
+    --color-background-tech: #000000;
+    --color-background-destaque-tech: #000000;
+
+    --color-font-one: #FFFFFF;
+    --color-font-two: #FFFFFF;
+    --color-font-three: #CCCCCC;
+    --color-font-destaque-tech: #FFFFFF;
+
+    --color-font-publico-alvo: #CCCCCC;
+    --color-bar-publico-alvo: #CCCCCC;
+
+}
+
+html[data-theme='blue'] {
+    --color-background-one: #0D1B2A;
+    --color-background-two: #0D1B2A;
+
+    --color-background-card-one: #131F31;
+    --color-background-card-tech: #131F31;
+
+    --color-background-alerta: #1F0000;
+    --color-background-tech: #1B263B;
+    --color-background-destaque-tech: #1B263B;
+
+--color-font-h2-destaque-tech: #FFC107;
+    --color-font-one: #FFC107;
+    --color-font-two: #FFFFFF;
+    --color-font-three: #FFC107;
+    --color-font-destaque-tech: #FFC107;
+
+    --color-font-publico-alvo: #F0F0F0;
+    --color-bar-publico-alvo: #F0F0F0;
+}
+
+html[data-theme='light'] {
+    --color-white: #FFFFFF;
+    --color-red: #FF0000;
+    --color-ice: #7DF1F5;
+    --color-background-one: #F2F2F2;
+    --color-background-two: #FFFFFF;
+    --color-background-dark: #000000;
+
+    --color-background-card-one: #FFFFFF;
+
+    --color-background-tech: #F2F2F2;
+    --color-background-alerta: #ffe5e5;
+
+    --color-background-red: #F3DADA;
+    --color-background-card-tech: #E1F5FE;
+
+
+    --color-background-blue-four: #2D52CE;
+
+    --color-background-destaque-tech: #06ACE9;
+
+
+    --color-font-one: #000000;
+    --color-font-two: #000000;
+    --color-font-three: #305874;
+    --color-font-destaque-tech: #7DF1F5;
+    --color-font-publico-alvo: #495057;
+
+    --color-bar-publico-alvo: #000000;
+
 }
 
 /* configurações gerais */
@@ -59,6 +154,7 @@ a {
 
 ul {
     list-style: none;
+    color: var(--color-font-two);
 }
 
 img {
@@ -68,6 +164,16 @@ img {
 
 section {
     padding: 6% 0;
+}
+
+h2,
+h3,
+h4 {
+    color: var(--color-font-one);
+}
+
+p {
+    color: var(--color-font-two);
 }
 
 /* configurações gerais página fim */
@@ -140,6 +246,7 @@ header>video {
 .destaque-header p {
     text-align: center;
     font-size: 1.2rem;
+    color: var(--color-white);
 }
 
 .btnReserva {
@@ -150,7 +257,7 @@ header>video {
     border-radius: 20px;
     background-color: transparent;
     border: solid 3px var(--color-white);
-    color: var(--color--primary);
+    color: var(--color-white);
     font-size: 2.7rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -181,21 +288,34 @@ header>video {
     gap: var(--spacing-sm);
 }
 
+.menu-desktop-itens{
+    color: var(--color-white);
+}
+
 /* icones fim */
 /* menu */
-.daltonic-switcher,
+
 .theme-switcher {
     background-color: transparent;
     border: none;
     cursor: pointer;
     width: var(--spacing-lg);
     height: var(--spacing-lg);
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
 }
 
-.theme-switcher {
-    border-radius: 50%;
-    border: 2px solid var(--color-white);
-    background-color: var(--color-background-dark);
+.black-mode {
+
+    background-color: #000000;
+}
+
+.white-mode {
+    background-color: #FFFFFF;
+}
+
+.blue-mode {
+    background-color: #163352;
 }
 
 .mobile,
@@ -215,7 +335,7 @@ header>video {
 .menu-desktop-itens li>a {
     font-weight: bold;
     font-size: var(--spacing-sm);
-        font-size: 0.8rem;
+    font-size: 0.8rem;
 }
 
 .menu-hamburger {
@@ -260,7 +380,7 @@ header>video {
 .card {
     text-align: center;
     border-radius: 30px;
-    background-color: var(--color-white);
+    background-color: var(--color-background-card-one);
     margin: 20px;
     padding: 5% 3%;
     flex-basis: 30%;
@@ -279,7 +399,7 @@ header>video {
 
 #tecnologias,
 #publico-alvo {
-    background-color: var(--color-white);
+    background-color: var(--color-background-two);
 }
 
 /* configurações gerais main */
@@ -320,7 +440,7 @@ header>video {
 }
 
 .alerta {
-    background-color: #ffe5e5;
+    background-color: var(--color-background-alerta);
     padding: 30px;
     border-radius: 20px;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
@@ -355,13 +475,13 @@ header>video {
 /* tecnologias */
 
 .tecnologia {
-    background-color: var(--color-background-blue-one);
+    background-color: var(--color-background-card-tech);
 }
 
 .destaque-tecnologia {
     padding: 3% 2%;
     text-align: center;
-    background-color: var(--color-background-blue-two);
+    background-color: var(--color-background-destaque-tech);
     border-radius: 40px;
     max-width: 75%;
     margin: 0 auto;
@@ -369,7 +489,7 @@ header>video {
 
 .destaque-tecnologia>h3 {
     font-size: 2.5rem;
-    color: var(--color-white);
+    color: var(--color-font-h2-destaque-tech);
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -397,7 +517,7 @@ header>video {
 
 .indices>div>span {
     font-weight: bold;
-    color: var(--color-ice);
+    color: var(--color-font-destaque-tech);
 }
 
 .indices>div>p {
@@ -427,8 +547,6 @@ header>video {
 
 #publico-alvo {
     padding: 80px 20px;
-    background-color: #ffffff;
-    font-family: "Inter", sans-serif;
 }
 
 .publico-cabecalho {
@@ -439,8 +557,6 @@ header>video {
 
 .publico-cabecalho h2 {
     font-size: 3rem;
-    font-weight: bold;
-    color: #000000;
 }
 
 .publico-alvo-cards {
@@ -468,7 +584,7 @@ header>video {
 .publico-alvo-texto h3 {
     font-size: 2rem;
     font-weight: bold;
-    color: #305874;
+    color: var(--color-font-three);
     margin-bottom: 15px;
     margin-top: -100px;
     line-height: 1.3;
@@ -477,13 +593,13 @@ header>video {
 .publico-alvo-texto p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #495057;
+    color: var(--color-font-publico-alvo);
     margin-bottom: 20px;
 }
 
 .publico-alvo-texto p.fonte {
     font-size: 0.9rem;
-    color: #305874;
+    color: var(--color-bar-publico-alvo);
     font-weight: 500;
     margin-bottom: 0;
     display: flex;
@@ -556,7 +672,7 @@ header>video {
     border-radius: 30px;
     display: flex;
     gap: 0;
-    background-color: #F2F2F2;
+    background-color: var(--color-background-tech);
     margin: 0 auto;
     max-width: 75%;
     overflow: hidden;
@@ -771,7 +887,7 @@ header>video {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
     border: none;
     cursor: pointer;
-     text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .btn {
@@ -815,7 +931,7 @@ header>video {
 /* FOOTER */
 
 .footer {
-    background-color: #0A192F;
+    background-color: #0D1322;
     /* Cor de fundo principal do footer (azul escuro) */
     color: #E0E0E0;
     /* Cor do texto principal (cinza claro/branco) */
