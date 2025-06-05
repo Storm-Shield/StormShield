@@ -1,5 +1,5 @@
-span{
-    color:#7DF1F5;
+span {
+    color: #7DF1F5;
 }
 
 #loading-screen {
@@ -8,14 +8,16 @@ span{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #021520; /* Azul escuro - Cor tema StormShield (sugestão) */
+    background-color: #021520;
+    /* Azul escuro - Cor tema StormShield (sugestão) */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    color: #ecf0f1; /* Cinza claro */
+    color: #ecf0f1;
+    /* Cinza claro */
     text-align: center;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .loading-content {
@@ -24,24 +26,23 @@ span{
     align-items: center;
 }
 
-.logo-titulo-container{
-    display:flex;
+.logo-titulo-container {
+    display: flex;
     align-items: center;
-    margin-bottom: 20px;
 }
 
-.logo-titulo-container .logo{
+.logo-titulo-container .logo {
     margin-left: 25px;
-    width: 400px;
+    width: 48%;
     height: auto;
 }
 
-.logo-titulo-container h1{
+.logo-titulo-container h1 {
     font-size: 1em;
     text-align: justify;
 }
 
-.logo-titulo-container h1 span{
+.logo-titulo-container h1 span {
     color: aqua;
     font-weight: bold;
 }
@@ -49,9 +50,17 @@ span{
 
 
 @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .loading-content h1 {
@@ -61,22 +70,30 @@ span{
 }
 
 .progress-bar-container {
-    width: 700px;
+    width: 100%;
     max-width: 700px;
     height: 35px;
-    background-color: #C2F6F4; /* Azul acinzentado */
+    background-color: #C2F6F4;
+    /* Azul acinzentado */
     border-radius: 15px;
-    margin: -65px 0 20px 0; 
-    overflow: hidden; /* Garante que a barra de progresso não ultrapasse as bordas */
-    border: 2px solid #7f8c8d; /* Borda sutil */
+    margin: -65px 0 20px 0;
+    overflow: hidden;
+    /* Garante que a barra de progresso não ultrapasse as bordas */
+    border: 2px solid #7f8c8d;
+    /* Borda sutil */
+    margin-top: 3px;
+
 }
 
 .progress-bar {
     width: 0%;
     height: 100%;
-    background: linear-gradient(90deg, #3498db, #2980b9); /* Gradiente azul - Cor tema StormShield */
-    border-radius: 15px 0 0 15px; /* Arredonda apenas o lado que cresce */
-    transition: width 0.2s ease-out; /* Transição suave para a barra */
+    background: linear-gradient(90deg, #3498db, #2980b9);
+    /* Gradiente azul - Cor tema StormShield */
+    border-radius: 15px 0 0 15px;
+    /* Arredonda apenas o lado que cresce */
+    transition: width 0.2s ease-out;
+    /* Transição suave para a barra */
 }
 
 #loading-percentage {
@@ -87,10 +104,37 @@ span{
 
 .loading-text {
     font-size: 1em;
-    color: #bdc3c7; /* Cinza mais claro */
+    color: #bdc3c7;
+    /* Cinza mais claro */
 }
 
 #main-content {
     padding: 20px;
     /* Estilos para o seu conteúdo principal */
+}
+
+/* responsividade */
+
+@media (max-width: 800px) {
+    .progress-bar-container {
+        width: 90%;
+    }
+
+}
+@media (max-width: 500px) {
+    .loading-content h1 {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+}
+@media (max-width: 500px) {
+    .loading-content h1 {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+}
+@media (max-width: 500px) {
+    .loading-content h1 {
+    font-size: 1em;
+}
 }
