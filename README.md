@@ -53,7 +53,7 @@ Desenvolver um sistema acessível e escalável que:
 ## 🧪 Protótipo
 
 Acesse o protótipo interativo do site aqui:  
-🔗 [Figma Prototype](https://www.figma.com/proto/PxgEXno859DQg9ovFE675b/Untitled?node-id=0-1&t=41XhpClan9A2XbSJ-1)
+🔗 [Figma Prototype](https://www.figma.com/design/PxgEXno859DQg9ovFE675b/StormShield-Sentinel?node-id=0-1&t=gAnOt8fjavl9YLuq-1)
 
 ---
 
