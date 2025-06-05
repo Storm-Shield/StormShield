@@ -126,7 +126,7 @@ body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     background-color: var(--color-background-one);
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 a {
@@ -1356,6 +1356,25 @@ header>video {
         font-size: 10vw;
     }
 
+}
+
+/* Regras para dispositivos (até 260px) */
+@media (max-width: 460px) {
+    .hero {
+
+        padding: 0;
+
+    }
+
+    .theme-switcher {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    #logo {
+        width: 5rem;
+        height: 5rem;
+    }
 }
 
 /* responsividade fim*/
