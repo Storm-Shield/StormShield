@@ -844,7 +844,7 @@ header>video {
 }
 
 .enunciado {
-    background: var(--color-background-destaque-tech);
+    background: var(--color-background-one);
     text-align: justify;
     font-size: 1rem;
     padding: 3%;
