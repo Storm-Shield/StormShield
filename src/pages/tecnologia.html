@@ -248,9 +248,14 @@
                        <span class="streamline--ai-technology-spark"></span>
                     </div>
                     <div class="etapa-conteudo">
-                        <h3>1. Coleta de dados</h3>
-                        <p>Levantamento de requisitos, estudo de componentes disponíveis e análise de projetos similares
-                            para definir a melhor abordagem técnica.</p>
+                        <h3>1. Coleta de dados</h3>    
+                        <p>São utilizadas APIs meteorológicas baseadas no GSI-BM e sensores conectados à internet (IoT) para captar dados em tempo real sobre o nível da água. 
+                            Scripts em Python são as ferramentas mencionadas para essa coleta. Sensores IoT estratégicos são instalados em rios, bacias e regiões com maior risco 
+                            de alagamento. Estes sensores coletam dados de níveis d'água em tempo real. A API do INMET (Instituto Nacional de Meteorologia) fornece dados como 
+                            previsão do tempo, temperatura, precipitação, umidade e vento. A API do Cemaden (Centro Nacional de Monitoramento e Alertas de Desastres Naturais) 
+                            fornece alertas de inundação e dados de monitoramento hidrológico e meteorológico. A API da ANA (Agência Nacional de Águas e Saneamento Básico) 
+                            fornece dados sobre níveis de rios, vazão e volume de precipitação.
+                        </p>
                     </div>
                 </div>
 
@@ -260,8 +265,11 @@
                     </div>
                     <div class="etapa-conteudo">
                         <h3>2. Armazenamento</h3>
-                        <p>Elaboração do esquema elétrico, seleção de componentes e planejamento da montagem física do
-                            protótipo, considerando eficiência e confiabilidade.</p>
+                        <p>Os dados são armazenados no banco de dados MongoDB. O MongoDB é escolhido por oferecer suporte nativo a informações geoespaciais e consultas geográficas. 
+                            A ferramenta PyMongo (driver para integração com MongoDB) é utilizada. O sistema deve armazenar os dados filtrados, previsões e comparações geradas pela
+                            IA em um banco de dados MongoDB otimizado para cargas de trabalho de Machine Learning, capaz de gerenciar até 20 TB de dados mensalmente, garantindo 
+                            acesso de baixa latência para o re-treinamento e inferência dos modelos de IA.
+                        </p>
                     </div>
                 </div>
 
@@ -271,8 +279,10 @@
                     </div>
                     <div class="etapa-conteudo">
                         <h3>3. I.A</h3>
-                        <p>Desenvolvimento do código-fonte para controlar o Arduino e seus componentes, implementando a
-                            lógica de funcionamento e otimizando o desempenho.</p>
+                        <p>A Inteligência Artificial atua na leitura e tratamento de dados,  previsão de enchentes e cálculo de rotas seguras. As ferramentas para I.A. incluem 
+                            bibliotecas e frameworks como TensorFlow e Scikit-learn. O sistema deve gerar previsões utilizando uma IA de previsão, com base nos dados previamente 
+                            processados e filtrados por uma IA de leitura/filtragem. O sistema deve receber dados das APIs e sensores IoT, filtrá-los com ajuda de IAs e posteriormente 
+                            fazer a previsão com base nos dados filtrados e coletados.</p>
                     </div>
                 </div>
 
