@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const progressBar = document.getElementById('progress-bar');
     const loadingPercentage = document.getElementById('loading-percentage');
     const loadingScreen = document.getElementById('loading-screen');
-
+ document.body.style.overflow = 'hidden';
     let progress = 0;
     const intervalTime = 50; // Intervalo de atualização em milissegundos
     const totalTime = 3000; // Tempo total de simulação de carregamento em milissegundos (3 segundos)
