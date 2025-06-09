@@ -16,10 +16,10 @@ Desenvolver um sistema acessível e escalável que:
 
 ## 💡 Funcionalidades
 
-- 📲 **Alertas multicanal:** Notificações por aplicativo, mensagens SMS e rádios comunitárias;
-- 🧠 **Previsão com IA:** Modelos de machine learning para prever enchentes com base em dados meteorológicos e históricos;
-- 🌐 **Dashboard interativo:** Painel web com visualização de áreas de risco em tempo real;
-- 📱 **App mobile:** Interface simples para acesso rápido a rotas de evacuação e status da região.
+- 🎨 **Seletor de Temas:** O usuário pode escolher entre 3 paletas de cores distintas, alterando todo o design do site em tempo real para se adequar à sua preferência.
+- 🖼️ **Slideshow Dinâmico:** Um slideshow de imagens impactante na página inicial para destacar os principais produtos ou mensagens.
+- 📱 **Design 100% Responsivo:** Utilizando a abordagem Mobile First, garanti que a experiência de navegação seja perfeita em qualquer dispositivo, de desktops a smartphones.
+- 🚀 **Tecnologias Modernas:** O projeto foi construído com as melhores práticas de HTML5, CSS3 e JavaScript, focando em performance e usabilidade.
 
 ---
 
@@ -27,9 +27,6 @@ Desenvolver um sistema acessível e escalável que:
 
 - **HTML, CSS, JavaScript** (Front-end)
 - **Figma** (Design da interface)
-- **Python (prototipagem da IA preditiva)**
-- **Google Maps API** (mapeamento de risco)
-- **Arduino (protótipo de sensores IoT)**
 
 ---
 
@@ -39,16 +36,6 @@ Desenvolver um sistema acessível e escalável que:
 - Órgãos de Defesa Civil e prefeituras (apenas 30% têm sistemas de alerta);
 - Cidades com infraestrutura urbana deficiente.
 
----
-
-## 📊 Benefícios
-
-- 📉 Redução de até **70% nos danos causados por enchentes** (com base em modelos internacionais);
-- ⚙️ Sistema **escalável e de baixo custo**;
-- 📡 Monitoramento **24h por dia** com dados em tempo real;
-- 🤝 Democratização do acesso à informação de risco.
-
----
 
 ## 🧪 Protótipo
 
