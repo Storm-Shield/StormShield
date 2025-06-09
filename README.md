@@ -18,6 +18,7 @@ Desenvolver um sistema acessível e escalável que:
 
 - 🎨 **Seletor de Temas:** O usuário pode escolher entre 3 paletas de cores distintas, alterando todo o design do site em tempo real para se adequar à sua preferência.
 - 🖼️ **Slideshow Dinâmico:** Um slideshow de imagens impactante na página inicial para destacar os principais produtos ou mensagens.
+- 🧠 **Quiz Educativo:** Um quiz interativo com 10 perguntas para engajar e ensinar sobre o tema.
 - 📱 **Design 100% Responsivo:** Utilizando a abordagem Mobile First, garanti que a experiência de navegação seja perfeita em qualquer dispositivo, de desktops a smartphones.
 - 🚀 **Tecnologias Modernas:** O projeto foi construído com as melhores práticas de HTML5, CSS3 e JavaScript, focando em performance e usabilidade.
 
